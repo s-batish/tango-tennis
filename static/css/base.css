@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500&family=Mulish:wght@200;300;400;500&display=swap');
+
+:root {
+    /* Fonts */
+    --title: 'Alegreya Sans', sans-serif;
+    --main-font: Mulish, sans-serif;
+
+    /* Colours */
+    --light-grey:#EBEFF2;
+    --teal: #006B69;
+    --light-teal: #53A697;
+    --light-turquoise: #9AD9C2;
+    --light-green: #CEF2DB;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--main-font);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--title);
+}
+
+main {
+    flex: 1 0 auto;
+    background-color: var(--light-grey);
+}
+
+/* Header */
+.navbar {
+    font-family: var(--title);
+    font-size: 25px;
+    background-color: var(--teal);
+}
+
+a.nav-link {
+    color: var(--light-grey);
+}
+
+img.logo {
+    width: 150px;
+}
+
+/* Footer */
+footer {
+    flex-shrink: 0;
+}
