@@ -69,4 +69,13 @@ img.logo {
 /* Footer */
 footer {
     flex-shrink: 0;
+    background-color: var(--teal);
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.social-link {
+    color: var(--light-grey);
+    margin: 10px 30px;
 }
