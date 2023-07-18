@@ -39,12 +39,31 @@ main {
     background-color: var(--teal);
 }
 
-a.nav-link {
-    color: var(--light-grey);
+.navbar-expand-lg .navbar-collapse {
+    justify-content: right;
+    text-align: right;
 }
 
 img.logo {
     width: 150px;
+}
+
+.active {
+    font-weight: 600;
+}
+
+.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .active>.nav-link {
+    color: var(--light-grey);
+}
+
+.hamburger {
+    color: #EBEFF2;
+    font-size: 30px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: flex-end;
 }
 
 /* Footer */
