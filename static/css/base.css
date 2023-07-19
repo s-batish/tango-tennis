@@ -79,3 +79,15 @@ footer {
     color: var(--light-grey);
     margin: 10px 30px;
 }
+
+/* Buttons */
+.buttons {
+    background-color: var(--teal);
+    color: var(--light-grey);
+}
+
+.buttons:hover {
+    background-color: var(--light-grey);
+    color: var(--teal);
+    border: solid 1px var(--teal);
+}
