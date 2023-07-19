@@ -1,6 +1,7 @@
 {% load static %}
 
 <header>
+    {% with request.resolver_match.url_name as url_name %}
     <nav class="navbar navbar-expand-lg navbar-light ">
         <!-- Logo -->
         <a class="navbar-brand" href="#"><img src="{% static 'images/logo.webp' %}" alt="Tango Tennis logo"
@@ -11,12 +12,12 @@
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="hamburger"><i class="fa-solid fa-bars"></i></span>
         </button>
-        
+
         <!-- Navbar items -->
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link {% if url_name == 'home' %}active{% endif %}" href="{% url 'home' %}">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Our Classes</a>
@@ -26,17 +27,18 @@
                 </li>
                 {% if request.user.is_authenticated %}
                 <li class="nav-item">
-                    <a class="nav-link" href="/accounts/logout/">Logout</a>
+                    <a class="nav-link {% if url_name == 'accounts_logout' %}active{% endif %}" href="/accounts/logout/">Logout</a>
                 </li>
                 {% else %}
                 <li class="nav-item">
-                    <a class="nav-link" href="/accounts/signup/">Register</a>
+                    <a class="nav-link {% if url_name == 'accounts_signup' %}active{% endif %}" href="/accounts/signup/">Register</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/accounts/login/">Login</a>
+                    <a class="nav-link {% if url_name == 'accounts_login' %}active{% endif %}" href="/accounts/login/">Login</a>
                 </li>
                 {% endif %}
             </ul>
         </div>
     </nav>
+    {% endwith %}
 </header>
