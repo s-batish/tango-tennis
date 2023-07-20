@@ -1,6 +1,6 @@
-from django.view.generic import CreateView
+from django.views.generic import CreateView
 from .models import Lessons
-from .form import AddLessonsForm
+from .forms import AddLessonsForm
 
 
 class AddLessons(CreateView):

@@ -1,5 +1,5 @@
 from django import forms
-from models import Lessons
+from .models import Lessons
 
 
 class AddLessonsForm(forms.ModelForm):
