@@ -61,7 +61,7 @@ img.logo {
     padding: 0 1rem;
 }
 
-.navbar-light .navbar-nav .nav-link:hover {
+#link-hover:hover {
     color: var(--light-grey);
     font-style: italic;
 }
