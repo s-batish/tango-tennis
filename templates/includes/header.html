@@ -27,11 +27,12 @@
                     </a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="{% url 'add_lessons' %}">Create Classes</a>
+                        <a class="dropdown-item" href="{% url 'our_classes' %}">View Classes</a>
                     </div>
                 </li>
                 {% else %}
                 <li class="nav-item">
-                    <a id="link-hover" class="nav-link" href="#">Our Classes</a>
+                    <a id="link-hover" class="nav-link" href="{% url 'our_classes' %}">Our Classes</a>
                 </li>
                 {% endif %}
                 <li class="nav-item">
