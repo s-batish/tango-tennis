@@ -94,3 +94,11 @@ footer {
     color: var(--teal);
     border: solid 1px var(--teal);
 }
+
+/* Form */
+.form {
+    background-color: var(--light-teal);
+    border-radius: 5px;
+    margin: 2rem;
+    color: var(--light-grey);
+}
