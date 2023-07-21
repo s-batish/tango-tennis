@@ -1,9 +1,10 @@
 from django.views.generic import CreateView
+from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import Lessons
 from .forms import AddLessonsForm
 
 
-class AddLessons(CreateView):
+class AddLessons(LoginRequiredMixin, CreateView):
     """
     Add lessons view
     """

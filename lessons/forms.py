@@ -12,7 +12,7 @@ class AddLessonsForm(forms.ModelForm):
             'level', 'date', 'morning', 'early_afternoon', 'late_afternoon',
             'evening'
         ]
-    
+
     labels = {
         'level': 'Level',
         'date': 'Date',
