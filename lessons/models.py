@@ -35,7 +35,7 @@ class Lessons(models.Model):
     evening = models.BooleanField(default=False)
 
     class Meta:
-        ordering = ['-updated_on']
+        ordering = ['date']
 
     def __str__(self):
         return str(self.level)

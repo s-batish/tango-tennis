@@ -4,4 +4,260 @@
 
 {% block content %}
 
+<div class="container d-flex justify-content-center ">
+    <div class="form shadow table-responsive">
+        <h1>Our Classes</h1>
+
+        <table class="table table-bordered table-sm">
+            {% if lesson.level == beginner %}
+            <h2>Beginners Classes</h2>
+            {% endif %}
+            <thead>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">09:00-11:00</th>
+                    <th scope="col">12:00-14:00</th>
+                    <th scope="col">15:00-17:00</th>
+                    <th scope="col">18:00-20:00</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for lesson in lessons %}
+                {% if lesson.level == 'beginner' %}
+                <tr>
+                    {% if lesson.date == 'mon' %}
+                    <th scope="row">Monday</th>
+                    <td>{{ lesson.morning }}</td>
+                    <td>{{ lesson.early_afternoon }}</td>
+                    <td>{{ lesson.late_afternoon }}</td>
+                    <td>{{ lesson.evening }}</td>
+                    {% endif %}
+                </tr>
+                <tr>
+                    {% if lesson.date == 'tues' %}
+                    <th scope="row">Tuesday</th>
+                    <td>{{ lesson.morning }}</td>
+                    <td>{{ lesson.early_afternoon }}</td>
+                    <td>{{ lesson.late_afternoon }}</td>
+                    <td>{{ lesson.evening }}</td>
+                    {% endif %}
+                </tr>
+                <tr>
+                    {% if lesson.date == 'wed' %}
+                    <th scope="row">Wednesday</th>
+                    <td>{{ lesson.morning }}</td>
+                    <td>{{ lesson.early_afternoon }}</td>
+                    <td>{{ lesson.late_afternoon }}</td>
+                    <td>{{ lesson.evening }}</td>
+                    {% endif %}
+                </tr>
+                <tr>
+                    {% if lesson.date == 'thur' %}
+                    <th scope="row">Thursday</th>
+                    <td>{{ lesson.morning }}</td>
+                    <td>{{ lesson.early_afternoon }}</td>
+                    <td>{{ lesson.late_afternoon }}</td>
+                    <td>{{ lesson.evening }}</td>
+                    {% endif %}
+                </tr>
+                <tr>
+                    {% if lesson.date == 'fri' %}
+                    <th scope="row">Friday</th>
+                    <td>{{ lesson.morning }}</td>
+                    <td>{{ lesson.early_afternoon }}</td>
+                    <td>{{ lesson.late_afternoon }}</td>
+                    <td>{{ lesson.evening }}</td>
+                    {% endif %}
+                </tr>
+                <tr>
+                    {% if lesson.date == 'sat' %}
+                    <th scope="row">Saturday</th>
+                    <td>{{ lesson.morning }}</td>
+                    <td>{{ lesson.early_afternoon }}</td>
+                    <td>{{ lesson.late_afternoon }}</td>
+                    <td>{{ lesson.evening }}</td>
+                    {% endif %}
+                </tr>
+                <tr>
+                    {% if lesson.date == 'sun' %}
+                    <th scope="row">Sunday</th>
+                    <td>{{ lesson.morning }}</td>
+                    <td>{{ lesson.early_afternoon }}</td>
+                    <td>{{ lesson.late_afternoon }}</td>
+                    <td>{{ lesson.evening }}</td>
+                    {% endif %}
+                </tr>
+                {% endif %}
+                {% endfor %}
+            </tbody>
+        </table>
+        <table class="table table-bordered table-sm">
+            {% if lesson.level == intermediate %}
+            <h2>Intermediate Classes</h2>
+            {% endif %}
+            <thead>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">09:00-11:00</th>
+                    <th scope="col">12:00-14:00</th>
+                    <th scope="col">15:00-17:00</th>
+                    <th scope="col">18:00-20:00</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for lesson in lessons %}
+                {% if lesson.level == 'intermediate' %}
+                <tr>
+                    {% if lesson.date == 'mon' %}
+                    <th scope="row">Monday</th>
+                    <td>{{ lesson.morning }}</td>
+                    <td>{{ lesson.early_afternoon }}</td>
+                    <td>{{ lesson.late_afternoon }}</td>
+                    <td>{{ lesson.evening }}</td>
+                    {% endif %}
+                </tr>
+                <tr>
+                    {% if lesson.date == 'tues' %}
+                    <th scope="row">Tuesday</th>
+                    <td>{{ lesson.morning }}</td>
+                    <td>{{ lesson.early_afternoon }}</td>
+                    <td>{{ lesson.late_afternoon }}</td>
+                    <td>{{ lesson.evening }}</td>
+                    {% endif %}
+                </tr>
+                <tr>
+                    {% if lesson.date == 'wed' %}
+                    <th scope="row">Wednesday</th>
+                    <td>{{ lesson.morning }}</td>
+                    <td>{{ lesson.early_afternoon }}</td>
+                    <td>{{ lesson.late_afternoon }}</td>
+                    <td>{{ lesson.evening }}</td>
+                    {% endif %}
+                </tr>
+                <tr>
+                    {% if lesson.date == 'thur' %}
+                    <th scope="row">Thursday</th>
+                    <td>{{ lesson.morning }}</td>
+                    <td>{{ lesson.early_afternoon }}</td>
+                    <td>{{ lesson.late_afternoon }}</td>
+                    <td>{{ lesson.evening }}</td>
+                    {% endif %}
+                </tr>
+                <tr>
+                    {% if lesson.date == 'fri' %}
+                    <th scope="row">Friday</th>
+                    <td>{{ lesson.morning }}</td>
+                    <td>{{ lesson.early_afternoon }}</td>
+                    <td>{{ lesson.late_afternoon }}</td>
+                    <td>{{ lesson.evening }}</td>
+                    {% endif %}
+                </tr>
+                <tr>
+                    {% if lesson.date == 'sat' %}
+                    <th scope="row">Saturday</th>
+                    <td>{{ lesson.morning }}</td>
+                    <td>{{ lesson.early_afternoon }}</td>
+                    <td>{{ lesson.late_afternoon }}</td>
+                    <td>{{ lesson.evening }}</td>
+                    {% endif %}
+                </tr>
+                <tr>
+                    {% if lesson.date == 'sun' %}
+                    <th scope="row">Sunday</th>
+                    <td>{{ lesson.morning }}</td>
+                    <td>{{ lesson.early_afternoon }}</td>
+                    <td>{{ lesson.late_afternoon }}</td>
+                    <td>{{ lesson.evening }}</td>
+                    {% endif %}
+                </tr>
+                {% endif %}
+                {% endfor %}
+            </tbody>
+        </table>
+        <table class="table table-bordered table-sm">
+            {% if lesson.level == advanced %}
+            <h2>Advanced Classes</h2>
+            {% endif %}
+            <thead>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">09:00-11:00</th>
+                    <th scope="col">12:00-14:00</th>
+                    <th scope="col">15:00-17:00</th>
+                    <th scope="col">18:00-20:00</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for lesson in lessons %}
+                {% if lesson.level == 'advanced' %}
+                <tr>
+                    {% if lesson.date == 'mon' %}
+                    <th scope="row">Monday</th>
+                    <td>{{ lesson.morning }}</td>
+                    <td>{{ lesson.early_afternoon }}</td>
+                    <td>{{ lesson.late_afternoon }}</td>
+                    <td>{{ lesson.evening }}</td>
+                    {% endif %}
+                </tr>
+                <tr>
+                    {% if lesson.date == 'tues' %}
+                    <th scope="row">Tuesday</th>
+                    <td>{{ lesson.morning }}</td>
+                    <td>{{ lesson.early_afternoon }}</td>
+                    <td>{{ lesson.late_afternoon }}</td>
+                    <td>{{ lesson.evening }}</td>
+                    {% endif %}
+                </tr>
+                <tr>
+                    {% if lesson.date == 'wed' %}
+                    <th scope="row">Wednesday</th>
+                    <td>{{ lesson.morning }}</td>
+                    <td>{{ lesson.early_afternoon }}</td>
+                    <td>{{ lesson.late_afternoon }}</td>
+                    <td>{{ lesson.evening }}</td>
+                    {% endif %}
+                </tr>
+                <tr>
+                    {% if lesson.date == 'thur' %}
+                    <th scope="row">Thursday</th>
+                    <td>{{ lesson.morning }}</td>
+                    <td>{{ lesson.early_afternoon }}</td>
+                    <td>{{ lesson.late_afternoon }}</td>
+                    <td>{{ lesson.evening }}</td>
+                    {% endif %}
+                </tr>
+                <tr>
+                    {% if lesson.date == 'fri' %}
+                    <th scope="row">Friday</th>
+                    <td>{{ lesson.morning }}</td>
+                    <td>{{ lesson.early_afternoon }}</td>
+                    <td>{{ lesson.late_afternoon }}</td>
+                    <td>{{ lesson.evening }}</td>
+                    {% endif %}
+                </tr>
+                <tr>
+                    {% if lesson.date == 'sat' %}
+                    <th scope="row">Saturday</th>
+                    <td>{{ lesson.morning }}</td>
+                    <td>{{ lesson.early_afternoon }}</td>
+                    <td>{{ lesson.late_afternoon }}</td>
+                    <td>{{ lesson.evening }}</td>
+                    {% endif %}
+                </tr>
+                <tr>
+                    {% if lesson.date == 'sun' %}
+                    <th scope="row">Sunday</th>
+                    <td>{{ lesson.morning }}</td>
+                    <td>{{ lesson.early_afternoon }}</td>
+                    <td>{{ lesson.late_afternoon }}</td>
+                    <td>{{ lesson.evening }}</td>
+                    {% endif %}
+                </tr>
+                {% endif %}
+                {% endfor %}
+            </tbody>
+        </table>
+
+    </div>
+</div>
 {% endblock %}
