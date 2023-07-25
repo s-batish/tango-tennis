@@ -257,9 +257,11 @@
                 {% endfor %}
             </tbody>
         </table>
+        {% if request.user.is_staff %}
         <div class="text-center">
             <a href="" class="btn buttons w-20 mb-2">Edit</a>
         </div>
+        {% endif %}
     </div>
 </div>
 {% endblock %}
