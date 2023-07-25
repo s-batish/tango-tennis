@@ -190,16 +190,41 @@
             <tbody>
                 {% for lesson in lessons %}
                 {% if lesson.level == 'advanced' %}
+
                 <tr>
                     {% if lesson.date == 1 %}
                     <th scope="row">Monday</th>
+                    {% endif %}
+                    {% if lesson.date == 2 %}
+                    <th scope="row">Tuesday</th>
+                    {% endif %}
+                    {% if lesson.date == 3 %}
+                    <th scope="row">Wednesday</th>
+                    {% endif %}
+                    {% if lesson.date == 4 %}
+                    <th scope="row">Thursday</th>
+                    {% endif %}
+                    {% if lesson.date == 5 %}
+                    <th scope="row">Friday</th>
+                    {% endif %}
+                    {% if lesson.date == 6 %}
+                    <th scope="row">Saturday</th>
+                    {% endif %}
+                    {% if lesson.date == 7 %}
+                    <th scope="row">Sunday</th>
+                    {% endif %}
                     <td>{{ lesson.morning }}</td>
                     <td>{{ lesson.early_afternoon }}</td>
                     <td>{{ lesson.late_afternoon }}</td>
                     <td>{{ lesson.evening }}</td>
+                    {% if request.user.is_staff %}
+                    <td>
+                        <a href="" class="btn buttons w-20">Edit</a>
+                        <a href="" class="btn buttons w-20">Delete</a>
+                    </td>
                     {% endif %}
                 </tr>
-                <tr>
+                <!-- <tr>
                     {% if lesson.date == 2 %}
                     <th scope="row">Tuesday</th>
                     <td>{{ lesson.morning }}</td>
@@ -253,15 +278,17 @@
                     <td>{{ lesson.evening }}</td>
                     {% endif %}
                 </tr>
+                {% if request.user.is_staff %}
+                <tr>
+                    <a href="" class="btn buttons w-20 mb-2">Edit</a>
+                </tr>
+                {% endif %} -->
                 {% endif %}
+
                 {% endfor %}
             </tbody>
         </table>
-        {% if request.user.is_staff %}
-        <div class="text-center">
-            <a href="" class="btn buttons w-20 mb-2">Edit</a>
-        </div>
-        {% endif %}
+
     </div>
 </div>
 {% endblock %}
