@@ -108,3 +108,12 @@ footer {
     background-color: var(--light-green);
     text-align: center;
 }
+
+.table td, .table th {
+    vertical-align: middle;
+}
+
+.edit-btns {
+    margin: 0.5px auto;
+    padding: 2px 10px;
+}
