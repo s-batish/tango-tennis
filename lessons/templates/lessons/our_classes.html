@@ -219,7 +219,7 @@
                     <td>{{ lesson.evening }}</td>
                     {% if request.user.is_staff %}
                     <td>
-                        <a href="" class="btn buttons w-20">Edit</a>
+                        <a href="{% url 'edit_lesson' lesson.id %}" class="btn buttons w-20">Edit</a>
                         <a href="{% url 'delete_lesson' lesson.id %}" class="btn buttons w-20">Delete</a>
                     </td>
                     {% endif %}
