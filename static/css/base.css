@@ -102,3 +102,9 @@ footer {
     margin: 2rem;
     color: var(--light-grey);
 }
+
+/* Timetable */
+.lesson {
+    background-color: var(--light-green);
+    text-align: center;
+}

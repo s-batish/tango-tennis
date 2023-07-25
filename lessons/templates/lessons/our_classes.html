@@ -261,3 +261,18 @@
     </div>
 </div>
 {% endblock %}
+
+{% block extra_js %}
+<script>
+    let tableCell = document.getElementsByTagName('td');
+    for (let i = 0; i < tableCell.length; i++) {
+
+        if (tableCell.item(i).innerHTML === "True") {
+            tableCell[i].classList.add("lesson")
+            tableCell[i].innerHTML = "&#x2713;"
+        } else if (tableCell.item(i).innerHTML === "False") {
+            tableCell[i].innerHTML = ""
+        }
+    }
+</script>
+{% endblock %}
