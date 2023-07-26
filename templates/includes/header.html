@@ -17,7 +17,8 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a id="link-hover" class="nav-link {% if url_name == 'home' %}active{% endif %}" href="{% url 'home' %}">Home</a>
+                    <a id="link-hover" class="nav-link {% if url_name == 'home' %}active{% endif %}"
+                        href="{% url 'home' %}">Home</a>
                 </li>
                 {% if request.user.is_staff %}
                 <li class="nav-item dropdown">
@@ -32,7 +33,8 @@
                 </li>
                 {% else %}
                 <li class="nav-item">
-                    <a id="link-hover" class="nav-link" href="{% url 'our_classes' %}">Our Classes</a>
+                    <a id="link-hover" class="nav-link {% if url_name == 'our_classes' %}active-link{% endif %}"
+                        href="{% url 'our_classes' %}">Our Classes</a>
                 </li>
                 {% endif %}
                 <li class="nav-item">
@@ -40,16 +42,16 @@
                 </li>
                 {% if request.user.is_authenticated %}
                 <li class="nav-item">
-                    <a id="link-hover" class="nav-link {% if url_name == 'accounts_logout' %}active{% endif %}"
+                    <a id="link-hover" class="nav-link {% if url_name == 'account_logout' %}active{% endif %}"
                         href="/accounts/logout/">Logout</a>
                 </li>
                 {% else %}
                 <li class="nav-item">
-                    <a id="link-hover" class="nav-link {% if url_name == 'accounts_signup' %}active{% endif %}"
+                    <a id="link-hover" class="nav-link {% if url_name == 'account_signup' %}active{% endif %}"
                         href="/accounts/signup/">Register</a>
                 </li>
                 <li class="nav-item">
-                    <a id="link-hover" class="nav-link {% if url_name == 'accounts_login' %}active{% endif %}"
+                    <a id="link-hover" class="nav-link {% if url_name == 'account_login' %}active{% endif %}"
                         href="/accounts/login/">Login</a>
                 </li>
                 {% endif %}

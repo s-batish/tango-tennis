@@ -47,13 +47,13 @@ img.logo {
     width: 150px;
 }
 
-.navbar-light .navbar-nav .nav-link.active {
+.navbar-light .navbar-nav .nav-link.active, .active-link {
     color: var(--light-grey);
     font-weight: 600;
     border-bottom: 2px solid var(--light-grey);
 }
 
-.navbar-light .navbar-nav .nav-link {
+.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .show>.nav-link {
     color: var(--light-grey);
 }
 
