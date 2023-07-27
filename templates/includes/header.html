@@ -37,8 +37,16 @@
                         href="{% url 'our_classes' %}">Our Classes</a>
                 </li>
                 {% endif %}
-                <li class="nav-item">
-                    <a id="link-hover" class="nav-link" href="#">Contact Us</a>
+                <li class="nav-item dropdown">
+                    <a id="link-hover"
+                        class="nav-link dropdown-toggle {% if url_name == 'create_booking' %}active-link{% endif %}"
+                        href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                        Bookings
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="{% url 'create_booking' %}">Book Classes</a>
+                        <a class="dropdown-item" href="#">Manage Bookings</a>
+                    </div>
                 </li>
                 {% if request.user.is_authenticated %}
                 <li class="nav-item">
