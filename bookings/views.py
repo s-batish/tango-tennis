@@ -1,9 +1,10 @@
 from django.views.generic import CreateView
+from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import Booking
 from .forms import BookingForm
 
 
-class AddBooking(CreateView):
+class AddBooking(LoginRequiredMixin, CreateView):
     """
     Create a booking view
     """
