@@ -9,16 +9,6 @@ LEVEL = (
     ("advanced", "Advanced")
 )
 
-DAY = (
-    (1, "Monday"),
-    (2, "Tuesday"),
-    (3, "Wednesday"),
-    (4, "Thursday"),
-    (5, "Friday"),
-    (6, "Saturday"),
-    (7, "Sunday"),
-)
-
 TIME = (
     (1, "09:00-11:00"),
     (2, "12:00-14:00"),
@@ -34,7 +24,7 @@ class Booking(models.Model):
     client = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="client")
     level = models.CharField(max_length=15, choices=LEVEL, default="beginner")
-    day = models.IntegerField(choices=DAY, default=1)
+    day = models.DateField()
     time = models.IntegerField(choices=TIME, default=1)
 
     class Meta:
