@@ -1,7 +1,16 @@
-from django.views.generic import CreateView
+from django.views.generic import CreateView, ListView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import Booking
 from .forms import BookingForm
+
+
+class BookingsList(ListView):
+    """
+    View to see all bookings
+    """
+    template_name = 'bookings/manage_bookings.html'
+    model = Booking
+    context_object_name = 'bookings'
 
 
 class AddBooking(LoginRequiredMixin, CreateView):
@@ -11,8 +20,8 @@ class AddBooking(LoginRequiredMixin, CreateView):
     template_name = 'bookings/create_booking.html'
     model = Booking
     form_class = BookingForm
-    success_url = '/lessons/our_classes'
-    
+    success_url = '/bookings/manage_bookings/'
+
     def form_valid(self, form):
         form.instance.client = self.request.user
         return super(AddBooking, self).form_valid(form)

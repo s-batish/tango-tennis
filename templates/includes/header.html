@@ -45,7 +45,7 @@
                     </a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="{% url 'create_booking' %}">Book Classes</a>
-                        <a class="dropdown-item" href="#">Manage Bookings</a>
+                        <a class="dropdown-item" href="{% url 'manage_bookings' %}">Manage Bookings</a>
                     </div>
                 </li>
                 {% if request.user.is_authenticated %}

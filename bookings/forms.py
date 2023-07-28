@@ -37,8 +37,9 @@ class BookingForm(forms.ModelForm):
             raise ValidationError(
                 'Invalid date - please choose a future date')
 
+        # If a class at that level, date and time has been booked, raise an
+        # error
         if Booking.objects.filter(level=level, day=day, time=time).exists():
-            # if a time on that day is booked raise validation error
             raise ValidationError(
                 f"Sorry this {level} class has already been booked"
             )
