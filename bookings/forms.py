@@ -1,10 +1,11 @@
 from django import forms
 from .models import Booking
 from django.core.exceptions import ValidationError
+from datetime import datetime
 
 
 # Class to create datepicker
-# Code from 
+# Code from
 # https://nancylin.xyz/how-to-implement-date-time-picker-in-django-without-javascript/
 class DatePickerInput(forms.DateInput):
     input_type = 'date'
@@ -31,6 +32,10 @@ class BookingForm(forms.ModelForm):
         level = self.cleaned_data['level']
         day = self.cleaned_data['day']
         time = self.cleaned_data['time']
+
+        if day < datetime.today().date():
+            raise ValidationError(
+                'Invalid date - please choose a future date')
 
         if Booking.objects.filter(level=level, day=day, time=time).exists():
             # if a time on that day is booked raise validation error
