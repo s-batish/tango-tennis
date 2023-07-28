@@ -8,7 +8,7 @@
         <h1 class="text-center">Manage your Bookings</h1>
         <table class="table table-bordered table-sm">
             <thead>
-                {% if request.user.is_authenticated %}
+                {% if request.user.is_staff %}
                 <th scope="col">Booking Reference</th>
                 {% endif %}
                 <th scope="col">Level</th>
@@ -19,7 +19,7 @@
             {% for booking in bookings %}
             <tbody>
                 <tr>
-                    {% if request.user.is_authenticated %}
+                    {% if request.user.is_staff %}
                     <td>{{ booking.pk }}</td>
                     {% endif %}
                     <td>{{ booking.level | title }}</td>
