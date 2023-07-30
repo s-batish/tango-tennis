@@ -27,7 +27,7 @@
                     <td>{{ booking.get_time_display }}</td>
                     <td>
                         <a href="#" class="btn buttons w-20 edit-btns">Edit</a>
-                        <a href="#" class="btn buttons w-20 edit-btns">Delete</a>
+                        <a href="{% url 'delete_booking' booking.id %}" class="btn buttons w-20 edit-btns">Delete</a>
                     </td>
                 </tr>
             </tbody>

@@ -1,5 +1,5 @@
-from django.views.generic import CreateView, ListView
-from django.contrib.auth.mixins import LoginRequiredMixin
+from django.views.generic import CreateView, ListView, DeleteView
+from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from .models import Booking
 from .forms import BookingForm
 from django.shortcuts import render
@@ -41,3 +41,19 @@ class AddBooking(LoginRequiredMixin, CreateView):
     def form_valid(self, form):
         form.instance.client = self.request.user
         return super(AddBooking, self).form_valid(form)
+
+
+class DeleteBooking(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+    """
+    View to delete booked classes
+    """
+    model = Booking
+    success_url = '/bookings/manage_bookings/'
+
+    # Allows staff to delete any booked lessons but logged in users can only
+    # delete their own
+    def test_func(self):
+        if self.request.user.is_staff:
+            return True
+        else:
+            return self.request.user == self.get_object().client
