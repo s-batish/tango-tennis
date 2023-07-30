@@ -3,6 +3,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import Booking
 from .forms import BookingForm
 from django.shortcuts import render
+from datetime import timedelta, date
 
 
 class BookingsList(ListView):
@@ -13,16 +14,18 @@ class BookingsList(ListView):
     model = Booking
     context_object_name = 'bookings'
 
-    # Ensures logged in users can only see their own bookings but staff can
-    # see all bookings
-    # Code from:
-    # https://www.youtube.com/watch?v=q2GGBThrgmA&list=PL_6Ho1hjJirn8WbY4xfVUAlcn51E4cSbY&index=5
-    def get_queryset(self, *args, **kwargs):
+    # Ensures staff can see all bookings with a date greater than yesterday
+    # but logged in users can only see their own bookings with a date greater
+    # than yesterday
+    def get_queryset(self):
         if self.request.user.is_staff:
-            booking_list = Booking.objects.all()
+            booking_list = Booking.objects.filter(
+                day__gt=(date.today()-timedelta(days=1)))
             return booking_list
         else:
-            booking_list = Booking.objects.filter(client=self.request.user)
+            booking_list = Booking.objects.filter(
+                client=self.request.user,
+                day__gt=(date.today()-timedelta(days=1)))
             return booking_list
 
 

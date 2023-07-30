@@ -33,6 +33,7 @@ class BookingForm(forms.ModelForm):
         day = self.cleaned_data['day']
         time = self.cleaned_data['time']
 
+        # Ensures class can only be booked for future dates
         if day < datetime.today().date():
             raise ValidationError(
                 'Invalid date - please choose a future date')
