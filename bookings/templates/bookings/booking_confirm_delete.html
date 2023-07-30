@@ -4,7 +4,6 @@
 
 {% block content %}
 <div class="container d-flex justify-content-center">
-    <div class="d-flex justify-content-center mx-2">
         <form method="post" class="text-center form shadow p-3">
             <h1 class="text-center">Confirm Booking Deletion</h1>
             {% csrf_token %}
@@ -14,6 +13,5 @@
             <p>Time: {{ booking.get_time_display }}</p>
             <input type="submit" value="Confirm" class="btn buttons w-20 mb-2">
         </form>
-    </div>
 </div>
 {% endblock %}
