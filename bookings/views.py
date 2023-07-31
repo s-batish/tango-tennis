@@ -4,6 +4,7 @@ from .models import Booking
 from .forms import BookingForm
 from django.shortcuts import render
 from datetime import timedelta, date
+from django.contrib import messages
 
 
 class BookingsList(ListView):
@@ -40,6 +41,8 @@ class AddBooking(LoginRequiredMixin, CreateView):
 
     def form_valid(self, form):
         form.instance.client = self.request.user
+        messages.add_message(
+            self.request, messages.SUCCESS, 'Your class has been booked!')
         return super(AddBooking, self).form_valid(form)
 
 
