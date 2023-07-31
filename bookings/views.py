@@ -1,4 +1,4 @@
-from django.views.generic import CreateView, ListView, DeleteView
+from django.views.generic import CreateView, ListView, DeleteView, UpdateView
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from .models import Booking
 from .forms import BookingForm
@@ -41,6 +41,24 @@ class AddBooking(LoginRequiredMixin, CreateView):
     def form_valid(self, form):
         form.instance.client = self.request.user
         return super(AddBooking, self).form_valid(form)
+
+
+class EditBooking(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
+    """
+    View to edit a booked class
+    """
+    template_name = 'bookings/create_booking.html'
+    model = Booking
+    form_class = BookingForm
+    success_url = '/bookings/manage_bookings/'
+
+    # Allows staff to edit any booked lessons but logged in users can only
+    # edit their own
+    def test_func(self):
+        if self.request.user.is_staff:
+            return True
+        else:
+            return self.request.user == self.get_object().client
 
 
 class DeleteBooking(LoginRequiredMixin, UserPassesTestMixin, DeleteView):

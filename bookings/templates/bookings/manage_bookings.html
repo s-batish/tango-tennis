@@ -29,7 +29,7 @@
                     <td>{{ booking.day }}</td>
                     <td>{{ booking.get_time_display }}</td>
                     <td>
-                        <a href="#" class="btn buttons w-20 edit-btns">Edit</a>
+                        <a href="{% url 'edit_booking' booking.id %}" class="btn buttons w-20 edit-btns">Edit</a>
                         <a href="{% url 'delete_booking' booking.id %}" class="btn buttons w-20 edit-btns">Delete</a>
                     </td>
                 </tr>
