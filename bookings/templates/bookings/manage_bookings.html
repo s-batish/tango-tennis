@@ -10,6 +10,7 @@
             <thead>
                 {% if request.user.is_staff %}
                 <th scope="col">Booking Reference</th>
+                <th scope="col">Client Username</th>
                 {% endif %}
                 <th scope="col">Level</th>
                 <th scope="col">Date</th>
@@ -21,6 +22,7 @@
                 <tr>
                     {% if request.user.is_staff %}
                     <td>{{ booking.pk }}</td>
+                    <td>{{ booking.client.username }}</td>
                     {% endif %}
                     <td>{{ booking.level | title }}</td>
                     <td>{{ booking.day }}</td>
