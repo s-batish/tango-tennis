@@ -39,6 +39,7 @@ class AddBooking(LoginRequiredMixin, CreateView):
     form_class = BookingForm
     success_url = '/bookings/manage_bookings/'
 
+    # Generates success message for successful booking of a class
     def form_valid(self, form):
         form.instance.client = self.request.user
         messages.add_message(
@@ -50,7 +51,7 @@ class EditBooking(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     """
     View to edit a booked class
     """
-    template_name = 'bookings/create_booking.html'
+    template_name = 'bookings/edit_booking.html'
     model = Booking
     form_class = BookingForm
     success_url = '/bookings/manage_bookings/'
@@ -62,6 +63,16 @@ class EditBooking(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
             return True
         else:
             return self.request.user == self.get_object().client
+
+    # Checks if class is already booked, then gives success message if not
+    def form_valid(self, form):
+        level = form.cleaned_data['level']
+        day = form.cleaned_data['day']
+        time = form.cleaned_data['time']
+        if not Booking.objects.filter(
+         level=level, day=day, time=time).exists():
+            messages.success(self.request, 'Your class has been updated!')
+        return super().form_valid(form)
 
 
 class DeleteBooking(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
@@ -78,3 +89,10 @@ class DeleteBooking(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
             return True
         else:
             return self.request.user == self.get_object().client
+
+    # Generates success message for successful deletion of class
+    # Code from:
+    # https://stackoverflow.com/questions/47636968/django-messages-for-a-successfully-delete-add-or-edit-item
+    def delete(self, request, *args, **kwargs):
+        messages.success(self.request, 'Your class has been deleted.')
+        return super(DeleteBooking, self).delete(request, *args, **kwargs)
