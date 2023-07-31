@@ -35,12 +35,11 @@
                 </tr>
             </tbody>
             {% endfor %}
-
         </table>
         {% else %}
         <div class="container text-center">
             <p >You don't have any booked classes yet<p>
-            <p>You can book them now <a href="{% url 'create_booking' %}">here</a></p>
+            <p>You can book them now <a class="link" href="{% url 'create_booking' %}">here</a></p>
         {% endif %}
         </div>
     </div>

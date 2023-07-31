@@ -31,6 +31,12 @@ main {
     background-color: var(--light-grey);
 }
 
+.link {
+    color: var(--light-grey);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
 /* Header */
 .navbar {
     font-family: var(--title);
