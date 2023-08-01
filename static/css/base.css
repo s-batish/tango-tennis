@@ -125,11 +125,29 @@ footer {
 }
 
 .hero-image {
-    position: absolute;
-    top: -150%;
-    bottom: 100%;
+    height: 250px;
+    width: 100%;
+    background: url("https://res.cloudinary.com/dpgw04era/image/upload/v1690879859/hero-image-2_oql6qx.webp") no-repeat 40% center;
+    background-size: cover;
 }
 
-.carousel-item {
-    height: 30vh;
+.hero-text {
+    color: var(--light-grey);
+    background-color: rgba(83, 166, 151, 0.9);
+    padding: 5px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.hero-p {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 400px) {
+    .hero-p {
+        font-size: 20px;
+    }
 }
