@@ -4,10 +4,57 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
-  <div class="hero-image d-flex flex-wrap justify-content-center align-content-center">
-    <div class="hero-text text-center">
-      <h1>Learn tennis | Keep fit | Make friends</h1>
-      <p class="hero-p">Join the Tango Tennis team now!</p>
+<div class="hero-image d-flex flex-wrap justify-content-center align-content-center">
+  <div class="hero-text text-center">
+    <h1>Learn tennis | Keep fit | Excel</h1>
+    <p class="hero-p">Join the Tango Tennis team now!</p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <h1>About</h1>
+      <p>Here at Tango Tennis we offer quality 1 on 1 coaching for adults of all ages and all abilities. Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Quibusdam, cumque minus distinctio labore qui error delectus
+        tempora quaerat laborum animi natus magnam voluptas. Voluptate modi architecto cupiditate, ducimus quaerat a!
+      </p>
     </div>
   </div>
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 d-flex justify-content-center">
+    <div class="col mb-4">
+      <div class="card h-100">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Top coaching in the area</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col mb-4">
+      <div class="card h-100">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">We cater for all abilities</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col mb-4">
+      <div class="card h-100">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Flexibility to choose a time that suits you</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm">
+      <div class="text-center">
+        <a class="btn buttons w-20 mb-4" href="{% url 'create_booking' %}">Book your lessons here!</a>
+    </div>
+    </div>
+</div>
 {% endblock %}
