@@ -2,7 +2,6 @@ from django.views.generic import CreateView, ListView, DeleteView, UpdateView
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from .models import Booking
 from .forms import BookingForm
-from django.shortcuts import render
 from datetime import timedelta, date
 from django.contrib import messages
 
