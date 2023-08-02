@@ -107,6 +107,16 @@ footer {
     border-radius: 5px;
     margin: 4rem;
     color: var(--light-grey);
+}  
+
+label {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+label[for="id_remember"], label[for="id_morning"], label[for="id_early_afternoon"], label[for="id_late_afternoon"], label[for="id_evening"] {
+    display: inline-block;
 }
 
 /* Timetable */
