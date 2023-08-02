@@ -1,4 +1,4 @@
-from django.views.generic import TemplateView, CreateView
+from django.views.generic import TemplateView, CreateView, ListView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import Review
 from .forms import ReviewForm
@@ -10,6 +10,15 @@ class Index(TemplateView):
     View to load page
     """
     template_name = 'home/index.html'
+
+
+class ReviewsList(ListView):
+    """
+    View to see all reviews
+    """
+    template_name = 'home/add_review.html'
+    model = Review
+    context_object_name = 'reviews'
 
 
 class AddReview(LoginRequiredMixin, CreateView):
