@@ -97,9 +97,9 @@
             <p>{{ review.body }}</p>
             <p class="text-right review-date">{{ review.created_on }}</p>
           </div>
-          {% if request.user == review.user %}
+          {% if request.user == review.user or request.user.is_staff %}
         <div class="text-center">
-          <a class="btn buttons w-20 mb-4" href="#">Edit</a>
+          <a class="btn buttons w-20 mb-4" href="{% url 'edit_review' review.id %}">Edit</a>
           <a class="btn buttons w-20 mb-4" href="{% url 'delete_review' review.id %}">Delete</a>
         </div>
         {% endif %}

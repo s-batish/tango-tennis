@@ -1,4 +1,4 @@
-from django.views.generic import CreateView, ListView, DeleteView
+from django.views.generic import CreateView, ListView, DeleteView, UpdateView
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from .models import Review
 from .forms import ReviewForm
@@ -29,6 +29,24 @@ class AddReview(LoginRequiredMixin, CreateView):
         messages.add_message(
             self.request, messages.SUCCESS, 'Your review has been saved!')
         return super(AddReview, self).form_valid(form)
+
+
+class EditReview(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
+    """
+    View to edit a review
+    """
+    template_name = 'home/edit_review.html'
+    model = Review
+    form_class = ReviewForm
+    success_url = reverse_lazy('home')
+
+    # Allows staff to edit any reviews but logged in users can only
+    # edit their own
+    def test_func(self):
+        if self.request.user.is_staff:
+            return True
+        else:
+            return self.request.user == self.get_object().user
 
 
 class DeleteReview(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
