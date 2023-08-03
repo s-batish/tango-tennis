@@ -162,6 +162,16 @@ label[for="id_remember"], label[for="id_morning"], label[for="id_early_afternoon
     z-index: 999;
 }
 
+/* Reviews */
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+    display: flex;
+    justify-content: center;
+}
+
+.card-body {
+    border-radius: 5px;
+}
+
 /* Media Queries */
 
 @media screen and (min-width: 400px) {
@@ -174,10 +184,7 @@ label[for="id_remember"], label[for="id_morning"], label[for="id_early_afternoon
 
 
 
-.carousel-item-next, .carousel-item-prev, .carousel-item.active {
-    display: flex;
-    justify-content: center;
-}
+
 
 @media screen and (min-width: 768px) {
     .comments {
