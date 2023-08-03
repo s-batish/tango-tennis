@@ -3,6 +3,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import Review
 from .forms import ReviewForm
 from django.urls import reverse_lazy
+from django.contrib import messages
 
 
 class ReviewsList(ListView):
@@ -25,4 +26,6 @@ class AddReview(LoginRequiredMixin, CreateView):
 
     def form_valid(self, form):
         form.instance.user = self.request.user
+        messages.add_message(
+            self.request, messages.SUCCESS, 'Your review has been saved!')
         return super(AddReview, self).form_valid(form)
