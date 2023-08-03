@@ -1,5 +1,5 @@
-from django.views.generic import CreateView, ListView
-from django.contrib.auth.mixins import LoginRequiredMixin
+from django.views.generic import CreateView, ListView, DeleteView
+from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from .models import Review
 from .forms import ReviewForm
 from django.urls import reverse_lazy
@@ -29,3 +29,19 @@ class AddReview(LoginRequiredMixin, CreateView):
         messages.add_message(
             self.request, messages.SUCCESS, 'Your review has been saved!')
         return super(AddReview, self).form_valid(form)
+
+
+class DeleteReview(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+    """
+    View to delete a review
+    """
+    model = Review
+    success_url = reverse_lazy('home')
+
+    # Allows staff to delete any reviews but logged in users can only
+    # delete their own
+    def test_func(self):
+        if self.request.user.is_staff:
+            return True
+        else:
+            return self.request.user == self.get_object().user
