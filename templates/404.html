@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}404{% endblock %}
+
+{% block content %}
+<div class="container d-flex justify-content-center">
+    <div class="text-center form shadow p-3">
+        <h1>404 - Page not found</h1>
+        <p>Uh oh, we can't find the page you were looking for</p>
+        <a href="{% url 'home' %}" class="btn buttons w-20 mb-2">Return Home</a>
+    </div>
+</div>
+{% endblock %}
