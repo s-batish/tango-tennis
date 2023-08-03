@@ -1,4 +1,5 @@
 # Tango Tennis
+Tango Tennis is a website for a fictional tennis club offering beginners, intermediate and advanced tennis lessons for all adults. The website is a booking site for users to book and manage classes of their choosing at times that suits them. It also allows users to write reviews of their classes so general users can see feedback about the club.
 ## Table of Contents
 1. [UX](#ux)
     - [Project Goals](#project-goals)
@@ -31,7 +32,42 @@
 6. [Credits](#credits)
 ## UX
 ### Project Goals
+The main goal of this project is to provide an intuitive and interactive website for users to create, view, edit and delete their bookings for various tennis lessons and to allow them to do the same with any reviews they choose to write.
 ### User Stories
+User stories for this project were broken down in to the following epics:
+
+EPIC: Booking classes
+- As a registered user I want to be able to book a class, so that I can be added to the tennis lesson
+- As a registered user I want to be able to view all of my booked classes, so that I can amend them if necessary
+- As a registered user I want to be able to edit my booked classes, so that I can amend them if necessary
+- As a registered user I want to be able to delete my booked classes, if I can no longer attend
+- As a registered user I want to receive feedback when creating, editing or deleting a class, so that I can clearly see what I have done
+
+EPIC: Registration and User Accounts
+- As a new user, I want to navigate to the sign up page, so that I can create an account
+- As a registered user, I want to login to my account, so that I can make and update bookings
+- As a registered user, I want to log out of my account, so that I can protect my information from being accessed by others
+- *As a registered user, I want to be able to edit my account details, so that I can make changes if needed* - should have
+- *As a registered user, I want to be able to delete my account, if I no longer want to be signed up to Tango Tennis* - should have
+
+EPIC: Viewing the features of Tango Tennis
+- As a general user, I want to see clearly laid out information about Tango Tennis, so that I can see what they have to offer
+- As a general user, I want to see a clearly structured navbar and footer, so that I can see what will be featured on the site and can access Tango Tennis' social media links easily
+- As a general user, I want the website to be responsive, so that I can access it on a range of devices
+- *As a general user, I want to have access to Tango Tennis' contact information, so that I can pass on any queries I have* - could have
+
+EPIC: Reviewing classes
+- As a registered user, I want to be able to review my classes, so that I can give feedback
+- As a general user, I want to be able to see reviews for the different classes and coaches, so that I can see which are rated highly
+- As a registered user, I want to be able to edit my reviews, so that I can make any adjustments if needed
+- As a registered user, I want to be able to delete my reviews, if I no longer want to leave that review.
+
+EPIC: Administrative Managing of Classes
+- As an admin member, I want to create tennis for the different levels, so that I can provide a clear timetable of our classes
+- As an admin member, I want to view how many people have booked classes, and the dates and times of bookings, so that I can keep track of all upcoming bookings
+- As an admin member, I want to be able to edit the lesson timetables, so that I can update them as necessary
+- As an admin member, I want to be able to delete lessons, so that I can they do not appear in the timetable when the timetable needs to change
+
 ### Development Planes
 #### Strategy Plane
 #### Scope Plane
