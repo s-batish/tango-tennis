@@ -14,7 +14,7 @@
 <div class="container">
   <div class="row">
     <div class="col-sm">
-      <h1>About Tango Tennis</h1>
+      <h1 class="mt-2">About Tango Tennis</h1>
       <p>
         Here at Tango Tennis we offer quality 1 on 1 coaching for adults of all ages and all abilities. We are located
         in the heart of Surrey and have 3 pristine hard courts, two clay courts and a state of the art clubhouse for you
@@ -82,8 +82,8 @@
   <div id="carouselExampleControlsNoTouching" class="carousel slide" data-interval="false">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <div class="card comments">
-          <div class="card-body d-block w-100 reviews">
+        <div class="card reviews">
+          <div class="card-body d-block w-100 reviews text-center">
             <h2>Need more convincing?</h2>
             <p>Have a look at what our wonderful members have said...</p>
           </div>
@@ -91,11 +91,11 @@
       </div>
       {% for review in reviews %}
       <div class="carousel-item">
-        <div class="card comments">
+        <div class="card reviews">
           <div class="card-body d-block w-100">
             <h3>{{ review.name }}</h3>
             <p>{{ review.body }}</p>
-            <p>{{ review.created_on }}</p>
+            <p class="text-right review-date">{{ review.created_on }}</p>
           </div>
         </div>
       </div>
@@ -103,12 +103,12 @@
     </div>
     <button class="carousel-control-prev" type="button" data-target="#carouselExampleControlsNoTouching"
       data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span  aria-hidden="true"><i class="fa-solid fa-angle-left arrows"></i></span>
       <span class="sr-only">Previous</span>
     </button>
     <button class="carousel-control-next" type="button" data-target="#carouselExampleControlsNoTouching"
       data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span aria-hidden="true"><i class="fa-solid fa-angle-right arrows"></i></span>
       <span class="sr-only">Next</span>
     </button>
   </div>

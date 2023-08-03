@@ -168,8 +168,22 @@ label[for="id_remember"], label[for="id_morning"], label[for="id_early_afternoon
     justify-content: center;
 }
 
-.card-body {
+.card {
     border-radius: 5px;
+}
+
+.reviews {
+    width: 80%;
+    border: 3px solid var(--teal);
+}
+
+.arrows {
+    font-size: 40px;
+    color: var(--teal);
+}
+
+.review-date {
+    color: #828587;
 }
 
 /* Media Queries */
@@ -180,14 +194,8 @@ label[for="id_remember"], label[for="id_morning"], label[for="id_early_afternoon
     }
 }
 
-
-
-
-
-
-
 @media screen and (min-width: 768px) {
-    .comments {
+    .reviews {
         width: 50%;
     }
 }
