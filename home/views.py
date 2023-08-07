@@ -15,6 +15,15 @@ class ReviewsList(ListView):
     context_object_name = 'reviews'
 
 
+class MyReviews(ListView):
+    """
+    View for user to see all their reviews
+    """
+    template_name = 'home/my_reviews.html'
+    model = Review
+    context_object_name = 'my_reviews'
+
+
 class AddReview(LoginRequiredMixin, CreateView):
     """
     View to add a review
