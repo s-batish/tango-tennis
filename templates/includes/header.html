@@ -4,8 +4,8 @@
     {% with request.resolver_match.url_name as url_name %}
     <nav class="navbar navbar-expand-lg navbar-light">
         <!-- Logo -->
-        <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'images/logo.webp' %}" alt="Tango Tennis logo"
-                class="logo"></a>
+        <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'images/logo.webp' %}"
+                alt="Tango Tennis logo" class="logo"></a>
 
         <!-- Hamburger menu -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -43,16 +43,15 @@
                     <a id="link-hover"
                         class="nav-link dropdown-toggle {% if url_name == 'create_booking' or url_name == 'manage_bookings' %}active-link{% endif %}"
                         href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                        Bookings
+                        <i class="fa-solid fa-user"></i> {{user.username}}
                     </a>
-                    <div class="dropdown-menu">
+                    <div class="dropdown-menu dropdown-menu-right">
                         <a class="dropdown-item" href="{% url 'create_booking' %}">Book Classes</a>
                         <a class="dropdown-item" href="{% url 'manage_bookings' %}">Manage Bookings</a>
+                        <a class="dropdown-item" href="#">My Reviews</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/accounts/logout/">Logout</a>
                     </div>
-                </li>
-                <li class="nav-item">
-                    <a id="link-hover" class="nav-link {% if url_name == 'account_logout' %}active{% endif %}"
-                        href="/accounts/logout/">Logout</a>
                 </li>
                 {% else %}
                 <li class="nav-item">
