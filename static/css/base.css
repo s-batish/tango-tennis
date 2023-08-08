@@ -192,6 +192,10 @@ label[for="id_remember"], label[for="id_morning"], label[for="id_early_afternoon
     color: #828587;
 }
 
+textarea {
+    max-width: 100%;
+}
+
 /* Media Queries */
 
 @media screen and (min-width: 400px) {
