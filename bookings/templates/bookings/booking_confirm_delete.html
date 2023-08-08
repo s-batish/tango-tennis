@@ -11,7 +11,8 @@
             <p>Level: {{ booking.level | title }}</p>
             <p>Date: {{ booking.day }}</p>
             <p>Time: {{ booking.get_time_display }}</p>
-            <input type="submit" value="Confirm" class="btn buttons w-20 mb-2">
+            <a href="{% url 'manage_bookings' %}" class="btn buttons w-20 mb-2 mx-2">Cancel</a>
+            <input type="submit" value="Confirm" class="btn buttons w-20 mb-2 mx-2">
         </form>
 </div>
 {% endblock %}
