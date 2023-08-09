@@ -15,7 +15,7 @@ class ReviewsList(ListView):
     context_object_name = 'reviews'
 
 
-class MyReviews(ListView):
+class MyReviews(LoginRequiredMixin, ListView):
     """
     View for user to see all their reviews
     """

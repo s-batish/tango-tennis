@@ -6,7 +6,7 @@ from datetime import timedelta, date
 from django.contrib import messages
 
 
-class BookingsList(ListView):
+class BookingsList(LoginRequiredMixin, ListView):
     """
     View to see all bookings
     """
