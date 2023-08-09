@@ -13,7 +13,7 @@ class OurClassesView(ListView):
     context_object_name = 'lessons'
 
 
-class AddLessons(LoginRequiredMixin, CreateView):
+class AddLessons(LoginRequiredMixin, UserPassesTestMixin, CreateView):
     """
     Add lessons view
     """
@@ -28,6 +28,9 @@ class AddLessons(LoginRequiredMixin, CreateView):
         """
         form.instance.created_by = self.request.user
         return super(AddLessons, self).form_valid(form)
+
+    def test_func(self):
+        return self.request.user.is_staff
 
 
 class EditLesson(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
