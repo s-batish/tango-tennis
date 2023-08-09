@@ -23,3 +23,7 @@ urlpatterns = [
     path('lessons/', include('lessons.urls')),
     path('bookings/', include('bookings.urls')),
 ]
+
+
+# Error Handler
+handler404 = 'tangotennis.views.error_404_view'
