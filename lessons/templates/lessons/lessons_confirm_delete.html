@@ -9,8 +9,8 @@
         <form method="post">
             {% csrf_token %}
             <p>Are you sure you want to delete this lesson?</p>
-            <a href="{% url 'our_classes' %}" class="btn buttons w-20 mb-2 mx-2">Cancel</a>
             <input type="submit" value="Confirm" class="btn buttons w-20 mb-2 mx-2">
+            <a href="{% url 'our_classes' %}" class="btn buttons w-20 mb-2 mx-2">Cancel</a>
         </form>
     </div>
 </div>
