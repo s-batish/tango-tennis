@@ -37,16 +37,19 @@
                     <a id="link-hover" class="nav-link {% if url_name == 'our_classes' %}active-link{% endif %}"
                         href="{% url 'our_classes' %}">Our Classes</a>
                 </li>
+                <li class="nav-item">
+                    <a id="link-hover" class="nav-link {% if url_name == 'create_booking' %}active-link{% endif %}"
+                        href="{% url 'create_booking' %}">Book Classes</a>
+                </li>
                 {% endif %}
                 {% if request.user.is_authenticated %}
                 <li class="nav-item dropdown">
                     <a id="link-hover"
-                        class="nav-link dropdown-toggle {% if url_name == 'create_booking' or url_name == 'manage_bookings' %}active-link{% endif %}"
+                        class="nav-link dropdown-toggle {% if url_name == 'manage_bookings' or url_name == 'my_reviews' %}active-link{% endif %}"
                         href="#" role="button" data-toggle="dropdown" aria-expanded="false">
                         <i class="fa-solid fa-user"></i> {{user.username}}
                     </a>
                     <div class="dropdown-menu dropdown-menu-right">
-                        <a class="dropdown-item" href="{% url 'create_booking' %}">Book Classes</a>
                         <a class="dropdown-item" href="{% url 'manage_bookings' %}">Manage Bookings</a>
                         <a class="dropdown-item" href="{% url 'my_reviews' %}">My Reviews</a>
                         <div class="dropdown-divider"></div>
@@ -54,10 +57,6 @@
                     </div>
                 </li>
                 {% else %}
-                <li class="nav-item">
-                    <a id="link-hover" class="nav-link {% if url_name == 'create_booking' %}active{% endif %}"
-                        href="{% url 'create_booking' %}">Book Classes</a>
-                </li>
                 <li class="nav-item">
                     <a id="link-hover" class="nav-link {% if url_name == 'account_signup' %}active{% endif %}"
                         href="/accounts/signup/">Register</a>
