@@ -33,7 +33,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-sbatish-tangotennis-998e1b9j40i.ws-eu102.gitpod.io',
+ALLOWED_HOSTS = ['8000-sbatish-tangotennis-998e1b9j40i.ws-eu103.gitpod.io',
                  'tango-tennis-9fd40e1a7462.herokuapp.com']
 
 
