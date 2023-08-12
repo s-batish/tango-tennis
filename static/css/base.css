@@ -196,6 +196,10 @@ textarea {
     max-width: 100%;
 }
 
+.carousel-control-next, .carousel-control-prev {
+    width: 5%;
+}
+
 /* Media Queries */
 
 @media screen and (min-width: 400px) {
@@ -207,5 +211,15 @@ textarea {
 @media screen and (min-width: 768px) {
     .reviews {
         width: 50%;
+    }
+
+    .carousel-control-next, .carousel-control-prev {
+        width: 35%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .carousel-control-next, .carousel-control-prev {
+        width: 40%;
     }
 }
