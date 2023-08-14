@@ -47,8 +47,8 @@ EPIC: Registration and User Accounts
 - As a new user, I want to navigate to the sign up page, so that I can create an account
 - As a registered user, I want to login to my account, so that I can make and update bookings
 - As a registered user, I want to log out of my account, so that I can protect my information from being accessed by others
-- *As a registered user, I want to be able to edit my account details, so that I can make changes if needed* - should have
-- *As a registered user, I want to be able to delete my account, if I no longer want to be signed up to Tango Tennis* - should have
+- *As a registered user, I want to be able to edit my account details, so that I can make changes if needed* - could have
+- *As a registered user, I want to be able to delete my account, if I no longer want to be signed up to Tango Tennis* - could have
 
 EPIC: Viewing the features of Tango Tennis
 - As a general user, I want to see clearly laid out information about Tango Tennis, so that I can see what they have to offer
@@ -70,6 +70,49 @@ EPIC: Administrative Managing of Classes
 
 ### Development Planes
 #### Strategy Plane
+The webiste will focus on the following target audiences:
+- **Roles:**
+    - Adults wanting tennis lessons (either beginners, intermediate or advanced players)
+    - New users (non-registered)
+    - Returning users (registered)
+- **Demographics:**
+    - Passion for tennis
+    - Desire to learn how to play (for beginners)
+    - Desire to improve or advance their game (for intermediate/advanced players)
+    - Adults only
+- **Psychographics:**
+    - Personality & Attitudes:
+        - Sporty
+        - Social
+        - Energetic
+    - Values:
+        - Community
+        - Healthy lifestyle
+        - Keen learner
+    - Lifestyles:
+        - Friendly competitive
+        - Active
+        - Sports interest
+
+The website needs to enable the **user** to:
+- Register/login to account
+- View the timetables for the different classes (beginner, intermediate, advanced)
+- Book a class by selecting:
+    - Which level
+    - Day
+    - Time
+- Edit/delete their bookings
+- Add a review
+- Edit/delete their reviews
+
+The website needs to enable the **client** to:
+- Login to admin account
+- Keep track of upcoming bookings:
+    - How many people have booked classes
+    - Dates and times of bookings
+- Edit and update class timetables
+- Manage user reviews
+
 #### Scope Plane
 #### Structure Plane
 #### Skeleton Plane
