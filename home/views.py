@@ -57,6 +57,13 @@ class EditReview(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
         else:
             return self.request.user == self.get_object().user
 
+    # Generates success message for updating review
+    def form_valid(self, form):
+        form.instance.client = self.request.user
+        messages.add_message(
+            self.request, messages.SUCCESS, 'Your review has been updated!')
+        return super().form_valid(form)
+
 
 class DeleteReview(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     """
@@ -72,3 +79,10 @@ class DeleteReview(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
             return True
         else:
             return self.request.user == self.get_object().user
+
+    # Generates success message for deleting review
+    # Code from:
+    # https://stackoverflow.com/questions/47636968/django-messages-for-a-successfully-delete-add-or-edit-item
+    def delete(self, request, *args, **kwargs):
+        messages.success(self.request, 'Your review has been deleted.')
+        return super(DeleteReview, self).delete(request, *args, **kwargs)
