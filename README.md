@@ -70,6 +70,8 @@ EPIC: Administrative Managing of Classes
 
 ### Development Planes
 #### Strategy Plane
+The Strategy Plane deals with who this site is built for and addresses their goals and needs.
+
 The webiste will focus on the following target audiences:
 - **Roles:**
     - Adults wanting tennis lessons (either beginners, intermediate or advanced players)
@@ -114,9 +116,35 @@ The website needs to enable the **client** to:
 - Manage user reviews
 
 #### Scope Plane
+The Scope Plane details what needs to be included in the site to correspond with the strategised features listed above.
+
+**Content Requirements:**
+- The user will be looking for:
+    - Customisable account
+        - Custom username/password
+        - Make, edit and delete bookings
+        - Make, edit and delete reviews
+    - Easy to navigate website
+    - Homepage explaining site
+    - Aesthetic theme (colour palette, typography, images)
+
+**Functionality Requirements:**
+- The user will be able to:
+    - Access the website on a range of devices (from 320px upwards)
+    - Have the ability to create, read, update and delete bookings
+    - Have the ability to create, read, update and delete reviews
+    - Register/login to account
+    - Access social media pages that open in separate tabs
 #### Structure Plane
+The Structure Plane demonstrates how the information on the site will be structured.
+- The following flowchart illustrates the information architecture for booking a class:
+![Flowchart for booking a class](docs/images/booking.png)
+- The following flowchart illustrates the information architecture for leaving a review:
+![Flowchart for leaving a review](docs/images/reviews.png)
 #### Skeleton Plane
+The Skeleton Plane shows what the site will look like. Balsamic wireframes have been used to demonstrate this.
 #### Surface Plane
+The Surface Plane demonstrates what the site will look like in greater depth by focusing on the finer details, such as the colour scheme and typography.
 ## Features
 ### Site Features
 ### Features Left to Implement
