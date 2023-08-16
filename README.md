@@ -143,6 +143,91 @@ The Structure Plane demonstrates how the information on the site will be structu
 ![Flowchart for leaving a review](docs/images/reviews.png)
 #### Skeleton Plane
 The Skeleton Plane shows what the site will look like. Balsamic wireframes have been used to demonstrate this.
+
+- Wireframes for general users
+<details><summary>Home page</summary>
+
+![Home page](docs/wireframes/home_page.png)
+</details>
+
+<details><summary>Our Classes page</summary>
+
+![Our classes page](docs/wireframes/our_classes.png)
+</details>
+<br/>
+
+- Wireframes for new users
+<details><summary>Signup page</summary>
+
+![Signup page](docs/wireframes/signup_page.png)
+</details>
+
+<br/>
+
+- Wireframes for existing users
+<details><summary>Login page</summary>
+
+![Login page](docs/wireframes/login_page.png)
+</details>
+
+<details><summary>Booking page</summary>
+
+![Booking page](docs/wireframes/booking_page.png)
+</details>
+
+<details><summary>Manage Bookings page</summary>
+
+![Manage bookings page](docs/wireframes/manage_bookings.png)
+</details>
+
+<details><summary>Edit booking page</summary>
+
+![Edit booking page](docs/wireframes/edit_class.png)
+</details>
+
+<details><summary>Delete booking page</summary>
+
+![Delete booking page](docs/wireframes/delete_class.png)
+</details>
+
+<details><summary>Add review page</summary>
+
+![Add review page](docs/wireframes/)
+</details>
+
+<details><summary>My reviews page</summary>
+
+![My reviews page](docs/wireframes/my_reviews.png)
+</details>
+
+<details><summary>Edit review page</summary>
+
+![Edit review page](docs/wireframes/edit_review.png)
+</details>
+
+<details><summary>Delete review page</summary>
+
+![Delete review page](docs/wireframes/delete_review.png)
+</details>
+
+<br/>
+
+- Wireframes for staff members
+<details><summary>Add lessons page</summary>
+
+![Add lessons page](docs/wireframes/add_lessons.png)
+</details>
+
+<details><summary>Edit lessons page</summary>
+
+![Edit lessons page](docs/wireframes/edit_lessons.png)
+</details>
+
+<details><summary>Delete lessons page</summary>
+
+![Delete lessons page](docs/wireframes/delete_lessons.png)
+</details>
+
 #### Surface Plane
 The Surface Plane demonstrates what the site will look like in greater depth by focusing on the finer details, such as the colour scheme and typography.
 ## Features
