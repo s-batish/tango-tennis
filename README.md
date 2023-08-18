@@ -282,6 +282,298 @@ The font for the h1 headings is Alegreya Sans SC, with Alegreya Sans being used 
 ![Mobile footer](docs/features/footer-mobile.png)
 </details>
 
+- The hero image features a button that will either take the user to the login page if they are not currently signed in, or if they are signed in already it will take them to the Book Classes page
+<details><summary>Desktop hero image</summary>
+
+![Desktop hero image](docs/features/hero-image-desktop.png)
+</details>
+<details><summary>Mobile hero image</summary>
+
+![Mobile hero image](docs/features/hero-image-mobile.png)
+</details>
+
+- The About sections details information about what Tango Tennis offers, with more detailing information split up into 3 cards.
+- Below this, there is a button that takes the user to the Our Classes page so they can see they class timetables.
+<details><summary>Desktop About section</summary>
+
+![Desktop About section](docs/features/about-desktop.png)
+</details>
+<details><summary>Mobile About section</summary>
+
+![Mobile About section](docs/features/about-mobile.png)
+</details>
+
+- At the bottom of the Home page thereis a section displaying the reviews that members have written.
+- The reviews appear on a carousel so the user can click the arrows to read them all.
+- Signed in users will see the button underneath allowing them to leave a review, but this will not be visible to non-logged in users.
+<details><summary>Desktop reviews</summary>
+
+![Desktop reviews](docs/features/reviews-desktop.png)
+</details>
+<details><summary>Mobile reviews</summary>
+
+![Mobile reviews](docs/features/reviews-mobile.png)
+</details>
+
+- Signed in users will also have the option to edit or delete their reviews, but again this will not be visible to users who are not logged in or for users who did not write that review.
+<details><summary>Reviews edit/delete buttons</summary>
+
+![Reviews edit/delete buttons](docs/features/reviews-edit-delete.png)
+</details>
+</br>
+
+***Our Classes page***
+- This page shows the class timetables for beginners, intermediate and advanced lessons.
+<details><summary>Desktop Our Classes page</summary>
+
+![Desktop Our Classes page](docs/features/classes-desktop.png)
+</details>
+<details><summary>Mobile Our Classes page</summary>
+
+![Mobile Our Classes page](docs/features/classes-mobile.png)
+</details>
+</br>
+
+***Sign up page***
+- This page allows unregistered users to sign up to Tango Tennis to be able to book their classes and leave reviews.
+<details><summary>Desktop Signup page</summary>
+
+![Desktop Signup page](docs/features/signup-desktop.png)
+</details>
+<details><summary>Mobile Signup page</summary>
+
+![Mobile Signup page](docs/features/signup-mobile.png)
+</details>
+</br>
+
+***Sign in page***
+- This page allows registered users to sign in to their accounts to be able to book classes and leave reviews
+<details><summary>Desktop Sign In page</summary>
+
+![Desktop Sign In page](docs/features/login-desktop.png)
+</details>
+<details><summary>Mobile Sign In page</summary>
+
+![Mobile Sign In page](docs/features/login-mobile.png)
+</details>
+</br>
+
+***404 page***
+- This page displays whenever a user directs to a broken link.
+- It has a return Home button that takes the user back to the Home page.
+<details><summary>Desktop 404 page</summary>
+
+![Desktop 404 page](docs/features/404-desktop.png)
+</details>
+<details><summary>Mobile 404 page</summary>
+
+![Mobile 404 page](docs/features/404-mobile.png)
+</details>
+</br>
+
+***403 page***
+- This page displays whenever a user attempts to access a page that they do not have permission for.
+- It has a Home button that takes the user back to the Home page.
+<details><summary>Desktop 403 page</summary>
+
+![Desktop 403 page](docs/features/403-desktop.png)
+</details>
+<details><summary>Mobile 403 page</summary>
+
+![Mobile 403 page](docs/features/403-mobile.png)
+</details>
+
+#### Features visible to a registered user
+***Book a Class page***
+- This page allows registered users to a book a class.
+- They can choose the level and time but selecting from the drop down lists, and they can choose the date they would like their class to be on by using the date picker.
+- If they pick either today's date or a date in the past, they will be informed that you can only pick future dates.
+- If they pick a date, time and level that has already been booked, they will be informed of this and required to choose another date, time or level.
+- Users will also see green messages for successfully completing actions such as signing in, signing out, or creating, updating or deleting a booking or review.
+    - For example, the success message can be seen below for successfully signing in.
+<details><summary>Desktop Book a Class page</summary>
+
+![Desktop Book a Class page](docs/features/book-class-desktop.png)
+</details>
+<details><summary>Mobile Book a Class page</summary>
+
+![Mobile Book a Class page](docs/features/book-class-mobile.png)
+</details>
+</br>
+
+***Manage Bookings page***
+- This page allows signed in users to see all of their bookings and to edit or delete them from here.
+- Also, once the user makes their booking, they will be immediately redirected to this page.
+<details><summary>Desktop Manage Bookings page</summary>
+
+![Desktop Manage Bookings page](docs/features/manage-bookings-desktop.png)
+</details>
+<details><summary>Mobile Manage Bookings page</summary>
+
+![Mobile Manage Bookings page](docs/features/manage-bookings-mobile.png)
+</details>
+</br>
+
+***Edit Bookings page***
+- This page allows signed in users to edit their booked class.
+- If they decide not to edit it anymore, pressing the Cancel button will take them back to the Manage Bookings page.
+<details><summary>Desktop Edit Booking page</summary>
+
+![Desktop Edit Booking page](docs/features/edit-booking-desktop.png)
+</details>
+<details><summary>Mobile Edit Booking page</summary>
+
+![Mobile Edit Booking page](docs/features/edit-booking-mobile.png)
+</details>
+</br>
+
+***Delete Bookings page***
+- This page allows signed in users to delete their booked class.
+- The delete confirmation page shows them exactly which class they will be deleting.
+- If they decide not to delete it anymore, pressing the Cancel button will take them back to the Manage Bookings page.
+<details><summary>Desktop Delete Booking page</summary>
+
+![Desktop Delete Booking page](docs/features/delete-booking-desktop.png)
+</details>
+<details><summary>Mobile Delete Booking page</summary>
+
+![Mobile Delete Booking page](docs/features/delete-booking-mobile.png)
+</details>
+</br>
+
+***My Reviews page***
+- This page allows signed in users to view, edit and delete their reviews.
+- They can also leave a review here by clicking on the Leave a review button.
+<details><summary>Desktop My Reviews page</summary>
+
+![Desktop My Reviews page](docs/features/my-reviews-desktop.png)
+</details>
+<details><summary>Mobile My Reviews page</summary>
+
+![Mobile My Reviews page](docs/features/my-reviews-mobile.png)
+</details>
+</br>
+
+***Edit Reviews page***
+- This page allows signed in users to edit their reviews.
+- If they decide not to edit it anymore, pressing the Cancel button will take them back to the My Reviews page.
+<details><summary>Desktop Edit Reviews page</summary>
+
+![Desktop Edit Reviews page](docs/features/edit-review-desktop.png)
+</details>
+<details><summary>Mobile Edit Reviews page</summary>
+
+![Mobile Edit Reviews page](docs/features/edit-review-mobile.png)
+</details>
+</br>
+
+***Delete Review page***
+- This page allows signed in users to delete their reviews.
+- The delete confirmation page shows them exactly which review they will be deleting.
+- If they decide not to delete it anymore, pressing the Cancel button will take them back to the My Reviews page.
+<details><summary>Desktop Delete Review page</summary>
+
+![Desktop Delete Review page](docs/features/delete-review-desktop.png)
+</details>
+<details><summary>Mobile Delete Review page</summary>
+
+![Mobile Delete Review page](docs/features/delete-review-mobile.png)
+</details>
+</br>
+
+***Sign Out page***
+- This page allows signed in users to log out.
+<details><summary>Desktop Sign Out page</summary>
+
+![Desktop Sign Out page](docs/features/signout-desktop.png)
+</details>
+<details><summary>Mobile Sign Out page</summary>
+
+![Mobile Sign Out page](docs/features/signout-mobile.png)
+</details>
+
+#### Features visible to a staff member
+***Create Lessons Page***
+- This page allows staff members to add lessons to the class timetable.
+- They can choose the level and day of the class by selecting from the dropdown options, and they can choose how often the class will run that day by selecting the checkbox options.
+
+<details><summary>Desktop Add Lesson page</summary>
+
+![Desktop Add Lesson page](docs/features/add-lesson-desktop.png)
+</details>
+<details><summary>Mobile Add Lesson page</summary>
+
+![Mobile Add Lesson page](docs/features/add-lesson-mobile.png)
+</details>
+</br>
+
+***View Lessons Page***
+- This page is similar to the Our Classes page, but for staff members there is an extra column with edit and delete buttons to amend the timetable.
+- On mobile devices the staff member can scroll across the timetable to view these buttons.
+
+<details><summary>Desktop View Classes page</summary>
+
+![Desktop View Classes page](docs/features/view-classes-desktop.png)
+</details>
+<details><summary>Mobile View Classes page</summary>
+
+![Mobile View Classes page](docs/features/view-classes-mobile.png)
+</details>
+</br>
+
+***Edit Lesson page***
+- This page allows staff members to edit the lessons in the Our Classes timetable.
+- If they decide not to edit it anymore, pressing the Cancel button will take them back to the View Classes page.
+<details><summary>Desktop Edit Classes page</summary>
+
+![Desktop Edit Classes page](docs/features/edit-class-desktop.png)
+</details>
+<details><summary>Mobile Edit Classes page</summary>
+
+![Mobile Edit Classes page](docs/features/edit-class-mobile.png)
+</details>
+</br>
+
+***Delete Lesson page***
+- This page allows staff members to delete the lessons in the Our Classes timetable.
+- If they decide not to edit it anymore, pressing the Cancel button will take them back to the View Classes page.
+<details><summary>Desktop Delete Classes page</summary>
+
+![Desktop Delete Classes page](docs/features/delete-class-desktop.png)
+</details>
+<details><summary>Mobile Delete Classes page</summary>
+
+![Mobile Delete Classes page](docs/features/delete-class-mobile.png)
+</details>
+</br>
+
+***Staff Manage Bookings page***
+- This page allows staff members to see all bookings that have been made.
+- They can see the booking references and also the usernames of the clients who booked the classes.
+- They also have the ability to edit or delete any of the bookings.
+<details><summary>Desktop Staff Manage Bookings page</summary>
+
+![Desktop Staff Manage Bookings page](docs/features/staff-manage-bookings-desktop.png)
+</details>
+<details><summary>Mobile Staff Manage Bookings page</summary>
+
+![Mobile Staff Manage Bookings page](docs/features/staff-manage-bookings-mobile.png)
+</details>
+</br>
+
+***Staff My Reviews page***
+- This page allows staff members to see all reviews that have been written.
+- They can see the usernames of the clients who wrote the reviews.
+- They also have the ability to edit or delete any of the reviews.
+<details><summary>Desktop Staff My Reviews page</summary>
+
+![Desktop Staff Manage Bookings page](docs/features/staff-reviews-desktop.png)
+</details>
+<details><summary>Mobile Staff My Reviews page</summary>
+
+![Mobile Staff Manage Bookings page](docs/features/staff-reviews-mobile.png)
+</details>
+
 ### Features Left to Implement
 ## Testing
 ### Testing Features
