@@ -259,6 +259,29 @@ The font for the h1 headings is Alegreya Sans SC, with Alegreya Sans being used 
 
 ## Features
 ### Site Features
+#### Features visible to a general user
+***Home page***
+- Both the header and footer will be shown on every page of the website, regardless of whether the user is registered or not. 
+- The below headers show what a general unregistered or non-logged in user will see as there are links to register or sign in.
+<details><summary>Desktop header</summary>
+
+![Desktop header](docs/features/header-desktop.png)
+</details>
+<details><summary>Mobile header</summary>
+
+![Mobile header](docs/features/header-mobile.png)
+</details>
+
+- The footers are the same to all users and show the three social media links for the website, which will open in new tabs when clicked.
+<details><summary>Desktop footer</summary>
+
+![Desktop footer](docs/features/footer-desktop.png)
+</details>
+<details><summary>Mobile footer</summary>
+
+![Mobile footer](docs/features/footer-mobile.png)
+</details>
+
 ### Features Left to Implement
 ## Testing
 ### Testing Features
