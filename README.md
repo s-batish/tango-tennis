@@ -230,6 +230,21 @@ The Skeleton Plane shows what the site will look like. Balsamic wireframes have 
 
 #### Surface Plane
 The Surface Plane demonstrates what the site will look like in greater depth by focusing on the finer details, such as the colour scheme and typography.
+
+- **Colour Scheme**
+
+The colour scheme for this project is as follows:
+![Colour scheme](docs/images/colour_scheme.png)
+It is based on a teal colour palette which has been chosen match the site logo and the green hues associated with tennis.
+
+- **Typography**
+
+The font for the h1 headings is Alegreya Sans SC, with Alegreya Sans being used for the other headings and Mulish being used as the main body font throughout the site.
+
+- **Imagery**
+    - The logo was created through Shopify's online logo maker
+    - The hero image, and the first and third home page card images were sourced from Unsplash, while the second home page card image was sourced from Pexels 
+
 ## Features
 ### Site Features
 ### Features Left to Implement
