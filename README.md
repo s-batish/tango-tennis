@@ -228,6 +228,18 @@ The Skeleton Plane shows what the site will look like. Balsamic wireframes have 
 ![Delete lessons page](docs/wireframes/delete_lessons.png)
 </details>
 
+<br/>
+
+- **Database Design**
+
+An Entity Relationship Diagram has been created with Lucidchart to show the various models created for this website and how they are connected. 
+- The User Model, created through Django All-Auth, is the principle model as it connects to the other models through primary/foreign key relationships.
+- The Booking Model uses the id from the User Model to allow an authenticated user to book a class.
+- The reviews model similarly uses the id from the User Model to allow authenticated users to leave reviews.
+- Finally, the Lessons model staff ids from the User Model to enable staff members to create the lesson timetables.
+
+![ERD](docs/images/erd.png)
+
 #### Surface Plane
 The Surface Plane demonstrates what the site will look like in greater depth by focusing on the finer details, such as the colour scheme and typography.
 
