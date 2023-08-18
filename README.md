@@ -575,6 +575,9 @@ The font for the h1 headings is Alegreya Sans SC, with Alegreya Sans being used 
 </details>
 
 ### Features Left to Implement
+- The main feature that I would like to implement is the ability to link the class timetables to the booking form. This was something that I set out on my project trying to achieve, but after discussing this idea with a tutor and my mentor, I decided that at my current point in the course I do not have the level of knowledge required to do this, however, this is definitely something that I would like to achieve at a later point. Currently, the Our Classes timetable displays classes everyday at all of the time slots, but what I orginally wanted to achieve was to allow staff members to create timetables that can be altered (which is something that I have created through the lessons model) which would then be reflected in the Book a Class form. For example, beginners classes might only be able to be held on Mondays, Tuesdays and Wednesdays in the morning and evening. The staff members are currently able to create such a timetable, but I would like the booking form to reflect this. So if a user selected a beginners class, the only days that they could select on the date picker would be the dates mentioned and the only times that could be chosen would be morning or evening. I think this feature would make the website a much more dynamic and realistic tennis booking site.
+- A contact us form is another feature that I would like to implement as a way for users to get in touch with the Tango Tennis staff members. This would make it easy to pass on any queries they may have and also provides a way for the staff members to contact their clients.
+- I would also like to create a profile page where users can update or delete their accounts, as it is best to give users the option to carry out such actions.
 ## Testing
 ### Testing Features
 ### Testing User Stories
