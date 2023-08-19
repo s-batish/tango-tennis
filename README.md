@@ -579,13 +579,7 @@ The font for the h1 headings is Alegreya Sans SC, with Alegreya Sans being used 
 - A contact us form is another feature that I would like to implement as a way for users to get in touch with the Tango Tennis staff members. This would make it easy to pass on any queries they may have and also provides a way for the staff members to contact their clients.
 - I would also like to create a profile page where users can update or delete their accounts, as it is best to give users the option to carry out such actions.
 ## Testing
-### Testing Features
-### Testing User Stories
-### Responsiveness
-### Browser Compatability
-### Lighthouse Testing
-### Code Validation
-### Bugs
+All testing information can be found in the [TESTING.md](TESTING.md) file.
 ## Deployment
 ### Heroku Deployment
 - This game was deployed to Heroku. The steps to do this are as follows:
