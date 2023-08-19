@@ -45,7 +45,7 @@
                 {% if request.user.is_authenticated %}
                 <li class="nav-item dropdown">
                     <a id="link-hover"
-                        class="nav-link dropdown-toggle {% if url_name == 'manage_bookings' or url_name == 'my_reviews' %}active-link{% endif %}"
+                        class="nav-link dropdown-toggle {% if url_name == 'manage_bookings' or url_name == 'my_reviews' or url_name == 'account_logout' %}active-link{% endif %}"
                         href="#" role="button" data-toggle="dropdown" aria-expanded="false">
                         <i class="fa-solid fa-user"></i> {{user.username}}
                     </a>
