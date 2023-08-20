@@ -32,15 +32,25 @@
 | ---| ---| ---| ---|
 | Leave a review button | Button changes colour when hovered over. Clicking it takes the user to the Leave a Review page. | Hovered over button then clicked it. | Button changed colour when hovered over. Clicking it took the user to the Leave a Review page. |
 | Edit/delete buttons on user's reviews | Buttons only appear on reviews that the user has written. Buttons change colour when hovered over. Edit button takes the user to the Edit your Review page. Delete button takes the user to the Confirm Review Deletion page. | Scrolled through the reviews until one the user had written. Hovered over the buttons then clicked them. | Buttons only appear on reviews that the user had written. Buttons changed colour when hovered over. Edit button took the user to the Edit your Review page. Delete button took the user to the Confirm Review Deletion page. |
-|  |  |  |  |
 #### Home Page - Staff Member
 | Feature | Expectation | Action | Result |
 | ---| ---| ---| ---|
 | Edit/delete buttons on all reviews | Buttons appear on all reviews. Buttons change colour when hovered over. Edit button takes the staff member to the Edit your Review page. Delete button takes the staff member to the Confirm Review Deletion page. | Hovered over the buttons then clicked them. | Buttons appear on all reviews. Buttons changed colour when hovered over. Edit button took the staff member to the Edit your Review page. Delete button took the staff member to the Confirm Review Deletion page. |
-#### Our Classes Page - General/Signed In User
 #### Our Classes Page -  Staff Member
-#### Book Classes Page - General User
-#### Book Classes Page - Signed In User/Staff Member
+| Feature | Expectation | Action | Result |
+| ---| ---| ---| ---|
+| Edit/delete buttons next to all classes | Buttons appear next to all classes. Buttons change colour when hovered over. Edit button takes the staff member to the Edit Lesson page. Delete button takes the staff member to the Confirm Lesson Deletion page. | Hovered over the buttons then clicked them. | Buttons appear next to all classes. Buttons changed colour when hovered over. Edit button took the staff member to the Edit Lesson page. Delete button took the staff member to the Confirm Lesson Deletion page. |
+| Edit lesson | Changing any of the options will result in that particular class being updated in the timetable. Edit lesson button changes colour when hovered over. | Changed the time of the Monday beginners lesson from morning, early afternoon, late afternoon and evening to just evening. Then pressed Edit Lesson. | Edit Lesson button changed colour when highlighted over. The lesson reappeared in the timetable with just evening highlighted. |
+| Delete lesson | Deleting a lesson will result in that particular class being deleted from the timetable. Delete lesson button and Confirm button change colour when hovered over. | Deleted the Monday beginners class. | Delete Lesson button and Confirm button changed colour when highlighted over. The lesson was removed from the timetable. |
+| Cancel button | Button changes colour when hovered over. Clicking it will take the user back to the Our Classes page. | Hovered over the Delete button then clicked it. Then clicked the Confirm button. | Button changed colour when hovered over. Clicking it took the user back to the Our Classes page. |
+#### Book Classes Page - Signed In User
+| Feature | Expectation | Action | Result |
+| ---| ---| ---| ---|
+| No date input | Clicking Book Class button will result in a warning message appearing informing the user to fill in the date field. | Clicked Book Class. | Received a message informing the user to fill in the date field. |
+| Date in the past | Clicking Book Class button will result in a warning message appearing informing the user to choose a future date. | Selected the date 25/12/22. | Received a message informing the user to choose a future date. |
+| Same date as another user | Clicking Book Class button will result in a warning message appearing informing the user that this class has already been booked. The message will also state which level of class the user tried to book. | Selected the same level, date and time as a previously booked class. | Received a message informing the user that this beginners class has already been booked. |
+| Successful booking | Clicking Book Class will take the user to the Manage Bookings page. The classes will be ordered with the most recent date at the top. A green success message will appear at the top of the page informing the user of the successful booking. This message will disappear automatically after 3 seconds. | Booked a valid class. | Taken to the Manage Bookings page. The classes are ordered with the most recent date at the top. A green success message appeared at the top of the page informing the user of the successful booking. This message disappeared automatically after 3 seconds. |
+|  |  |  |  |
 #### Register Page - General User
 #### Login Page
 #### Manage Bookings Page - Signed In User
