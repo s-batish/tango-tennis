@@ -168,4 +168,17 @@ EPIC: Administrative Managing of Classes
 - The website has been tested on Chrome, Firefox and Edge to ensure that it functions on a range of browsers.
 ### Lighthouse Testing
 ### Code Validation
+#### HTML
+- All pages were passed through the [W3C HTML Validator](https://validator.w3.org/) and any errors that were found were corrected so none of the pages are showing any warnings or errors.
+- Because of Django's templating language, the files could not be copied and pasted into the validator. Instead, the code validation was checked by right clicking on the page, viewing the page source and copying this into the validator.
+#### CSS
+- The site was passed through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and no errors were found.
+
+![CSS validator results](docs/testing/css-validator.png)
+#### JavaScript
+- JavaScript code was passed through [JSHint](https://jshint.com/) and the only issue it raised was that in the base.html file bootstrap was an undefined variable. As the JavaScript here was actually referring to Bootstrap Alerts, and I was assigning a new Bootstrap alert to the existing alert, I thought I could ignore this warning.
+
+![JS validator results](docs/testing/js-validator.png)
+
+- The other piece of JavaScript in this project was in the our_classes.html file, and the only issues that came up were missing semicolons, which I amended.
 ### Bugs
