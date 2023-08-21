@@ -106,6 +106,61 @@
 | ---| ---| ---| ---|
 | Add a lesson | Add lesson button changes colour when hovered over. Clicking this button will take the staff member to the View Classes page where they will see the lesson added to the correct table in the timetable. | Added a lesson. | Add lesson button changed colour when hovered over. The added lesson appeared in the timetable. |
 ### Testing User Stories
+EPIC: Booking classes
+- As a registered user I want to be able to book a class, so that I can be added to the tennis lesson
+    - Result: Signed in users have the ability to book a class
+- As a registered user I want to be able to view all of my booked classes, so that I can amend them if necessary
+    - Result: Signed in users are able to view their bookings in the Manage your Bookings page
+- As a registered user I want to be able to edit my booked classes, so that I can amend them if necessary
+    - Result: Signed in users are able to edit their booked classes through the Manage your Bookings page
+- As a registered user I want to be able to delete my booked classes, if I can no longer attend
+    - Result: Signed in users are able to delete their booked classes through the Manage your Bookings page
+- As a registered user I want to receive feedback when creating, editing or deleting a class, so that I can clearly see what I have done
+    - Result: Signed in users will be presented with green success messages for completing these actions
+
+EPIC: Registration and User Accounts
+- As a new user, I want to navigate to the sign up page, so that I can create an account
+    - Result: General users can create an account through the sign up page
+- As a registered user, I want to login to my account, so that I can make and update bookings
+    - Result: Registered users can login to their accounts
+- As a registered user, I want to log out of my account, so that I can protect my information from being accessed by others
+    - Result: Signed in users can log out of their accounts
+- *As a registered user, I want to be able to edit my account details, so that I can make changes if needed - **could have***
+    - Result: This user story has been added to the list of future features
+- *As a registered user, I want to be able to delete my account, if I no longer want to be signed up to Tango Tennis - **could have***
+    - Result: This user story has been added to the list of future features
+
+EPIC: Viewing the features of Tango Tennis
+- As a general user, I want to see clearly laid out information about Tango Tennis, so that I can see what they have to offer
+    - Result: General users can see the home page with clear information about what Tango Tennis offers
+- As a general user, I want to see a clearly structured navbar and footer, so that I can see what will be featured on the site and can access Tango Tennis' social media links easily
+    - Result: The navbar and footer have been created so that they are easy to navigate for general users
+- As a general user, I want the website to be responsive, so that I can access it on a range of devices
+    - Result: The website is responsive and so can be accessed on mobile devices, tablets, laptops and desktops
+- *As a general user, I want to have access to Tango Tennis' contact information, so that I can pass on any queries I have - **could have***
+    - Result: This user story has been added to the list of future features
+
+EPIC: Reviewing classes
+- As a registered user, I want to be able to review my classes, so that I can give feedback
+    - Result: Signed in users can leave reviews
+- As a general user, I want to be able to see reviews for the different classes and coaches, so that I can see which are rated highly
+    - Result: General users can see reviews presented as a carousel on the home page
+- As a registered user, I want to be able to edit my reviews, so that I can make any adjustments if needed
+    - Result: Signed in users can edit their own reviews either through the My Reviews page or directly on the reviews carousel
+- As a registered user, I want to be able to delete my reviews, if I no longer want to leave that review.
+    - Result: Signed in users can delete their own reviews either through the My Reviews page or directly on the reviews carousel
+
+EPIC: Administrative Managing of Classes
+- As an admin member, I want to create tennis for the different levels, so that I can provide a clear timetable of our classes
+    - Result: Staff members are able to create class timetables
+- As an admin member, I want to view how many people have booked classes, and the dates and times of bookings, so that I can keep track of all upcoming bookings
+    - Result: Staff members are able to view who has booked classes and when they will be through the Manage Bookings page
+- As an admin member, I want to be able to edit the lesson timetables, so that I can update them as necessary
+    - Result: Staff members are able to edit the lesson timetables through the View Classes page
+- As an admin member, I want to be able to delete lessons, so that I can they do not appear in the timetable when the timetable needs to change
+    - Result: Staff members are able to delete lessons through the View Classes page
+
+ **NB:** As mentioned in the future features section, the ability to link the lesson timetable to the booking form is something that needs to be worked on to make a fully functional, more advanced website, however, the foundations for this have all been laid out as can be seen above.
 ### Responsiveness
 ### Browser Compatability
 ### Lighthouse Testing
