@@ -9,14 +9,16 @@
         {% if bookings.count > 0 %}
         <table class="table table-bordered table-sm">
             <thead>
-                {% if request.user.is_staff %}
-                <th scope="col">Booking Reference</th>
-                <th scope="col">Client Username</th>
-                {% endif %}
-                <th scope="col">Level</th>
-                <th scope="col">Date</th>
-                <th scope="col">Time</th>
-                <th scope="col">Edit / Delete</th>
+                <tr>
+                    {% if request.user.is_staff %}
+                    <th scope="col">Booking Reference</th>
+                    <th scope="col">Client Username</th>
+                    {% endif %}
+                    <th scope="col">Level</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Edit / Delete</th>
+                </tr>
             </thead>
             {% for booking in bookings %}
             <tbody>
@@ -38,10 +40,10 @@
         </table>
         {% else %}
         <div class="container text-center">
-            <p >You don't have any booked classes yet<p>
-            <p>You can book them now <a class="link" href="{% url 'create_booking' %}">here</a></p>
-        {% endif %}
+            <p>You don't have any booked classes yet<p>
+                    <p>You can book them now <a class="link" href="{% url 'create_booking' %}">here</a></p>
         </div>
+        {% endif %}
     </div>
 </div>
 {% endblock %}
