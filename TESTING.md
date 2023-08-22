@@ -167,6 +167,41 @@ EPIC: Administrative Managing of Classes
 ### Browser Compatability
 - The website has been tested on Chrome, Firefox and Edge to ensure that it functions on a range of browsers.
 ### Lighthouse Testing
+**Desktop**
+| Page | Performance | Accessibility | Best Practices | SEO |
+| ---| ---| ---| ---| ---|
+| Home | 94 | 100 | 100 | 91 |
+| Our Classes | 99 | 100 | 100 | 91 |
+| Register | 97 | 100 | 100 | 91 |
+| Login | 100 | 100 | 100 | 91 |
+| Book Classes | 99 | 100 | 100 | 91 |
+| Manage Bookings | 99 | 100 | 100 | 91 |
+| My Reviews | 99 | 100 | 100 | 91 |
+| Leave a Review | 99 | 100 | 100 | 91 |
+| Edit Class | 95 | 100 | 100 | 91 |
+| Delete Class | 95 | 100 | 100 | 91 |
+| Logout | 99 | 100 | 100 | 91 |
+| Add Lesson | 95 | 100 | 100 | 91 |
+| Edit Lesson | 96 | 100 | 100 | 91 |
+| Delete Lesson | 99 | 100 | 100 | 91 |
+
+**Mobile**
+| Page | Performance | Accessibility | Best Practices | SEO |
+| ---| ---| ---| ---| ---|
+| Home | 79 | 100 | 100 | 92 |
+| Our Classes | 93 | 100 | 100 | 92 |
+| Register | 95 | 100 | 100 | 92 |
+| Login | 95 | 100 | 100 | 92 |
+| Book Classes | 89 | 100 | 100 | 92 |
+| Manage Bookings | 94 | 100 | 100 | 90 |
+| My Reviews | 95 | 100 | 100 | 92 |
+| Leave a Review | 93 | 100 | 100 | 92 |
+| Edit Class | 93 | 100 | 100 | 92 |
+| Delete Class | 93 | 100 | 100 | 91 |
+| Logout | 92 | 100 | 100 | 92 |
+| Add Lesson | 94 | 100 | 100 | 92 |
+| Edit Lesson | 95 | 100 | 100 | 92 |
+| Delete Lesson | 94 | 100 | 100 | 92 |
 ### Code Validation
 #### HTML
 - All pages were passed through the [W3C HTML Validator](https://validator.w3.org/) and any errors that were found were corrected so none of the pages are showing any warnings or errors.
