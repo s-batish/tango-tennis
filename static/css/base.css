@@ -38,9 +38,13 @@ main {
 }
 
 .link {
-    color: var(--light-grey);
+    color: black;
     text-decoration: underline;
     font-weight: bold;
+}
+
+a:hover {
+    color: var(--light-grey);
 }
 
 /* Header */
@@ -112,7 +116,7 @@ footer {
     background-color: var(--light-teal);
     border-radius: 5px;
     margin: 4rem;
-    color: var(--light-grey);
+    color: black;
 }  
 
 label {
