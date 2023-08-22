@@ -16,7 +16,7 @@ class TestRedirectViews(TestCase):
     def test_add_review(self):
         response = self.client.get('/add_review/')
         self.assertEqual(response.status_code, 302)
-    
+
     def test_edit_review(self):
         response = self.client.get('/edit_review/1/')
         self.assertEqual(response.status_code, 302)

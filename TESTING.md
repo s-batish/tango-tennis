@@ -181,4 +181,25 @@ EPIC: Administrative Managing of Classes
 ![JS validator results](docs/testing/js-validator.png)
 
 - The other piece of JavaScript in this project was in the our_classes.html file, and the only issues that came up were missing semicolons, which I amended.
+
+#### Python
+- All python files were passed through the [CI Python Linter](https://pep8ci.herokuapp.com/#). 
+- The main error that was reported was that there was no new line at the end of one of the files but this was quickly amended.
+- The only remaining file with some lines that are too long is the settings.py file due to the AUTH_PASSWORD_VALIDATORS being too long.
 ### Bugs
+#### Solved Bugs
+- I had an incorrect file path for the add_lessons.html file as I was receiving the error that the template did not exist.
+    - Solution: I had to add the add_lessons.html file to a lessons folder within the templates folder in the lessons app.
+- I had an incorrect success url for adding a lesson which was leading to a 404 error.
+    - Solution: I had to correct the url from /our_classes to /lessons/our_classes.
+- When adding lessons to the timetable, the days were appearing in alphabetical order instead of in order of the days of the week.
+    - Solution: I edited the lessons model to make the DAY choice fields integers from 1-7 so that they would be ordered correctly on the timetable.
+    - I then tried migrating the new model but ran into a new error that it could not migrate correctly, so I had to delete all the migration files and reset the database on ElephantSQL.
+    After doing this and resetting the superuser, everything worked as intended.
+- I was getting a type error when a non-signed in user adds /bookings/manage_bookings/ or /my_reviews to the home page url.
+    - Solution: I had to add the LoginRequiredMixin to the BookingsList and MyReviews view.py files so that only logged in users can reach those pages and non-signed in users are redirected to the login page.
+- I had an issue where any signed in users could add lessons to the Create Lessons page if they inputted /lessons/add_lessons to the home page url.
+    - Solution: I added the UserPassesTestMixin to the AddLessons view so that only staff members can access this page other users would be shown the 403 page.
+#### Unsolved Bugs
+- I originally created the home app to just render the home page index.html template, but I later decided to add the reviews functionality to my website. Because the reviews are rendered on the home page, I made the model, views and form for this within the home app as I initially thought this made sense as this was all to display on the same page. However, after a discussion with my mentor it was agreed that the reviews functionality should be contained within its own app so there should a separate home app and reviews app. Unfortunately, due to time constraints I was unable to separate the home app into two to have the reviews as its own app, but this is something I'd look to implement going forwards.
+- As I have mentioned in the future features section, currently the add lessons functionality does not correlate to the booking form, meaning that if a staff member decides that there will only be one beginners class on a Monday, this will not be reflected in the booking form. This is something that I would really like to implement, but due to my current level of knowledge I was unable to do so at the moment. Therefore, to ensure that the booking form makes sense with regards to the lesson timetable, there are currently lessons everyday at all of the time slots.
