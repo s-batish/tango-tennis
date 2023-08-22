@@ -202,6 +202,14 @@ EPIC: Administrative Managing of Classes
 | Add Lesson | 94 | 100 | 100 | 92 |
 | Edit Lesson | 95 | 100 | 100 | 92 |
 | Delete Lesson | 94 | 100 | 100 | 92 |
+### Unit Tests
+- Unit tests were carried out to check the basic functionality of the home, lessons, and bookings views.
+- These tests check that the correct templates are rendered and also tests some redirects.
+- To perform these tests enter the following command into the terminal:
+    - python3 manage.py test --settings=tangotennis.settings_test
+- The results can be seen below:
+
+![Unit test results](docs/testing/unittests.png)
 ### Code Validation
 #### HTML
 - All pages were passed through the [W3C HTML Validator](https://validator.w3.org/) and any errors that were found were corrected so none of the pages are showing any warnings or errors.
