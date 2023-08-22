@@ -1,5 +1,8 @@
 # Tango Tennis
 Tango Tennis is a website for a fictional tennis club offering beginners, intermediate and advanced tennis lessons for all adults. The website is a booking site for users to book and manage classes of their choosing at times that suits them. It also allows users to write reviews of their classes so general users can see feedback about the club.
+
+![Tango Tennis website shown on a range of devices](docs/images/site_mockup.png)
+[View the live site here](https://tango-tennis-9fd40e1a7462.herokuapp.com/)
 ## Table of Contents
 1. [UX](#ux)
     - [Project Goals](#project-goals)
@@ -40,14 +43,14 @@ EPIC: Registration and User Accounts
 - As a new user, I want to navigate to the sign up page, so that I can create an account
 - As a registered user, I want to login to my account, so that I can make and update bookings
 - As a registered user, I want to log out of my account, so that I can protect my information from being accessed by others
-- *As a registered user, I want to be able to edit my account details, so that I can make changes if needed* - could have
-- *As a registered user, I want to be able to delete my account, if I no longer want to be signed up to Tango Tennis* - could have
+- *As a registered user, I want to be able to edit my account details, so that I can make changes if needed - **could have***
+- *As a registered user, I want to be able to delete my account, if I no longer want to be signed up to Tango Tennis - **could have***
 
 EPIC: Viewing the features of Tango Tennis
 - As a general user, I want to see clearly laid out information about Tango Tennis, so that I can see what they have to offer
 - As a general user, I want to see a clearly structured navbar and footer, so that I can see what will be featured on the site and can access Tango Tennis' social media links easily
 - As a general user, I want the website to be responsive, so that I can access it on a range of devices
-- *As a general user, I want to have access to Tango Tennis' contact information, so that I can pass on any queries I have* - could have
+- *As a general user, I want to have access to Tango Tennis' contact information, so that I can pass on any queries I have - **could have***
 
 EPIC: Reviewing classes
 - As a registered user, I want to be able to review my classes, so that I can give feedback
@@ -665,3 +668,18 @@ All testing information can be found in the [TESTING.md](TESTING.md) file.
 - psycopg2==2.9.6
     - Used to connect to PostgreSQL
 ## Credits
+### Code
+- [Stack Overflow](https://stackoverflow.com/questions/11372177/how-to-use-if-else-condition-on-django-templates) for help in correctly creating if statements to templates. This was first used in the our_classes.html file to ensure only the lessons in the correct level were showing on the timetable.
+- [Stack Overflow](https://stackoverflow.com/questions/3248869/how-do-i-get-data-from-a-table) for how to get the inner text data from each cell in a table.
+- [Stack Overflow](https://stackoverflow.com/questions/14268342/make-the-first-letter-uppercase-inside-a-django-template) for how to capitalise the first letter in a template.
+- [Stack Overflow](https://stackoverflow.com/questions/4320679/django-display-choice-value) for how to display a choice value from a model in a template.
+- [Stack Overflow](https://stackoverflow.com/questions/71709219/how-to-filter-a-queryset-of-objects-created-more-than-one-hour-ago-from-djangos) for how to use timedelta to get days less than the current timestamp (ie today).
+- [Stack Overflow](https://stackoverflow.com/questions/24914637/show-a-successful-message-with-class-based-views) for how to add custom success messages to class based views.
+- [Stack Overflow](https://stackoverflow.com/questions/47636968/django-messages-for-a-successfully-delete-add-or-edit-item) for how to add a custom message for deleting an item.
+- [Stack Overflow](https://stackoverflow.com/questions/73585099/success-url-not-redirecting-to-the-page-i-want) for help with a success url not redirecting to the desired page.
+- [Stack Overflow](https://stackoverflow.com/questions/13935064/css-target-label-based-on-for-attribute) for how to target a label in CSS based on the 'for' attribute.
+### Images
+- Hero image: [Unsplash](https://unsplash.com/photos/BlS47Eiu2iM)
+- Coach image: [Unsplash](https://unsplash.com/photos/oDlLU_1hZwM)
+- Man with rackets image: [Unsplash](https://unsplash.com/photos/T5_t9unj6q0)
+- Older player image: [Pexels](https://www.pexels.com/photo/cheerful-aged-sportsman-playing-tennis-on-tennis-court-5067813/)
