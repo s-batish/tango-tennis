@@ -173,6 +173,7 @@ EPIC: Administrative Managing of Classes
 - The website has been passed through [WAVE](https://wave.webaim.org/) to check the accessibility of the site.
 - Originally there were errors to do with the contrast on the Our Classes page and on all the forms due to the light grey font colour being challenging to read on the light teal background. This was amended by changing the font colour to black which removed these errors.
 - There were alerts mentioned on all of the pages about a redundant link but this is because in the header the logo and the Home button both take the user back to the Home page.
+- There were also errors on the Our Classes page due to their being 3 empty table headers, however, after adding aria-labels to these cells, the errors were resolved.
 ### Lighthouse Testing
 **Desktop**
 | Page | Performance | Accessibility | Best Practices | SEO |
