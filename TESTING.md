@@ -6,7 +6,7 @@
 | Logo | Clicking the logo takes the user back to the home page. | Started on Our Classes page. Then clicked the logo. | Taken back to the home page. |
 | Home link | Text italicises when hovered over. Clicking it makes the text bold and underlined. Takes user back to Home Page. | Hovered over the link. Then clicked the link. | Text italicised when hovered over. Clicking it made the text bold and underlined. Taken back to Home Page. |
 | Our Classes link | Text italicises when hovered over. Clicking it makes the text bold and underlined. Takes user to Our Classes page. | Hovered over the link. Then clicked the link. | Text italicised when hovered over. Clicking it made the text bold and underlined. Taken to Our Classes page. |
-| Book Classes link | Text italicises when hovered over. Clicking it takes the user to the Login page. Login link becomes bold and underlined. | Hovered over the link. Then clicked the link. | Text italicised when hovered over. Clicking it took the user to the Login page. Login link becomes bold and underlined. |
+| Book Classes link | Text italicises when hovered over. Clicking it takes the user to the Login page. Login link becomes bold and underlined. | Hovered over the link. Then clicked the link. | Text italicised when hovered over. Clicking it took the user to the Login page. Login link became bold and underlined. |
 | Register link | Text italicises when hovered over. Clicking it makes the text bold and underlined. Takes user to the Register page.  | Hovered over the link. Then clicked the link. | Text italicised when hovered over. Clicking it made the text bold and underlined. Taken to Register page. |
 | Login link | Text italicises when hovered over. Clicking it makes the text bold and underlined. Takes user to the Login page.  | Hovered over the link. Then clicked the link. | Text italicised when hovered over. Clicking it made the text bold and underlined. Taken to Login page. |
 #### Header - Signed In User
@@ -30,6 +30,7 @@
 #### Home Page - Signed In User
 | Feature | Expectation | Action | Result |
 | ---| ---| ---| ---|
+| Book your lessons here button | Button changes colour when hovered over. Clicking it takes the user to the Book Classes page. | Hovered over button then clicked it. | Button changed colour when hovered over. Clicking it took the user to the Book Classes page. |
 | Leave a review button | Button changes colour when hovered over. Clicking it takes the user to the Leave a Review page. | Hovered over button then clicked it. | Button changed colour when hovered over. Clicking it took the user to the Leave a Review page. |
 | Edit/delete buttons on user's reviews | Buttons only appear on reviews that the user has written. Buttons change colour when hovered over. Edit button takes the user to the Edit your Review page. Delete button takes the user to the Confirm Review Deletion page. | Scrolled through the reviews until one the user had written. Hovered over the buttons then clicked them. | Buttons only appear on reviews that the user had written. Buttons changed colour when hovered over. Edit button took the user to the Edit your Review page. Delete button took the user to the Confirm Review Deletion page. |
 #### Home Page - Staff Member
@@ -59,6 +60,7 @@
 | Insufficient password | Clicking Sign up will result in a message informing the user that their password needs to be changed to meet the specified requirements. | Inputted the password 123. | Message appeared informing the user that the password was too short, was too common and only had numeric values.|
 | Non-matching passwords | Clicking Sign up will result in a message informing the user that they must type the same password each time. | Inputted the password Password975 then the password Password987. | Message appeared informing the user that they must type the same password each time. |
 | Successful Sign Up | Clicking Sign up will take the user to the Home page. A green success message appears informing the user of the successful sign in. This message will disappear automatically after 3 seconds. Navbar changes to that of a signed in user. | Clicked Sign up. | Taken to the Home page. A green success message appeared informing the user of the successful sign in. This message disappeared automatically after 3 seconds. Navbar changed to that of a signed in user. |
+| Sign in link | Clicking the sign up link takes the user to the Login page. | Clicked the sign up link. | Taken to the Login page. |
 #### Login Page
 | Feature | Expectation | Action | Result |
 | ---| ---| ---| ---|
@@ -74,6 +76,7 @@
 | Edit your Lesson | Changing any of the options will result in that particular class being updated in the Manage Bookings page. Update class button changes colour when hovered over. | Changed the level from beginners to advanced and changed the time from 09:00-11:00 to 18:00-20:00. Then pressed Update class. | Update class button changed colour when highlighted over. The class reappeared in the Manage Bookings page with the information updated. |
 | Delete booking  | Deleting a booking will result in that particular class being deleted from the Manage Bookings page. Confirm button changes colour when hovered over. | Deleted a booking. | Confirm button changed colour when highlighted over. The booking was removed from the Manage Bookings page. |
 | Cancel button | Button changes colour when hovered over. Clicking it will take the user back to the Manage your Bookings page. | Hovered over the Cancel button then clicked it. Then clicked the Cancel button. | Button changed colour when hovered over. Clicking it took the user back to the Manage your Bookings page. |
+| No classes booked - 'here' link | Clicking the link will take the user to the Book Classes page. | Clicked the link. | Taken to the Book Classes page. |
 #### Manage Bookings Page - Staff Member
 | Feature | Expectation | Action | Result |
 | ---| ---| ---| ---|
@@ -151,7 +154,7 @@ EPIC: Reviewing classes
     - Result: Signed in users can delete their own reviews either through the My Reviews page or directly on the reviews carousel
 
 EPIC: Administrative Managing of Classes
-- As an admin member, I want to create tennis for the different levels, so that I can provide a clear timetable of our classes
+- As an admin member, I want to create tennis lessons for the different levels, so that I can provide a clear timetable of our classes
     - Result: Staff members are able to create class timetables
 - As an admin member, I want to view how many people have booked classes, and the dates and times of bookings, so that I can keep track of all upcoming bookings
     - Result: Staff members are able to view who has booked classes and when they will be through the Manage Bookings page
@@ -166,6 +169,10 @@ EPIC: Administrative Managing of Classes
 - The responsiveness of each page of the website has also been tested using Chrome Developer tools to ensure that the website maintains a clear display across all screen sizes from 320px upwards.
 ### Browser Compatability
 - The website has been tested on Chrome, Firefox and Edge to ensure that it functions on a range of browsers.
+### Accessiblity
+- The website has been passed through [WAVE](https://wave.webaim.org/) to check the accessibility of the site.
+- Originally there were errors to do with the contrast on the Our Classes page and on all the forms due to the light grey font colour being challenging to read on the light teal background. This was amended by changing the font colour to black which removed these errors.
+- There were alerts mentioned on all of the pages about a redundant link but this is because in the header the logo and the Home button both take the user back to the Home page.
 ### Lighthouse Testing
 **Desktop**
 | Page | Performance | Accessibility | Best Practices | SEO |

@@ -1,5 +1,5 @@
 # Tango Tennis
-Tango Tennis is a website for a fictional tennis club offering beginners, intermediate and advanced tennis lessons for all adults. The website is a booking site for users to book and manage classes of their choosing at times that suits them. It also allows users to write reviews of their classes so general users can see feedback about the club.
+Tango Tennis is a website for a fictional tennis club offering beginners, intermediate and advanced tennis lessons for all adults. The website is a booking site for users to book and manage classes of their choosing at times that suit them. It also allows users to write reviews of their classes so general users can see feedback about the club.
 
 ![Tango Tennis website shown on a range of devices](docs/images/site_mockup.png)
 [View the live site here](https://tango-tennis-9fd40e1a7462.herokuapp.com/)
@@ -59,7 +59,7 @@ EPIC: Reviewing classes
 - As a registered user, I want to be able to delete my reviews, if I no longer want to leave that review.
 
 EPIC: Administrative Managing of Classes
-- As an admin member, I want to create tennis for the different levels, so that I can provide a clear timetable of our classes
+- As an admin member, I want to create tennis lesson for the different levels, so that I can provide a clear timetable of our classes
 - As an admin member, I want to view how many people have booked classes, and the dates and times of bookings, so that I can keep track of all upcoming bookings
 - As an admin member, I want to be able to edit the lesson timetables, so that I can update them as necessary
 - As an admin member, I want to be able to delete lessons, so that I can they do not appear in the timetable when the timetable needs to change
@@ -188,7 +188,7 @@ The Skeleton Plane shows what the site will look like. Balsamic wireframes have 
 
 <details><summary>Add review page</summary>
 
-![Add review page](docs/wireframes/)
+![Add review page](docs/wireframes/add_review.png)
 </details>
 
 <details><summary>My reviews page</summary>
@@ -596,7 +596,7 @@ All testing information can be found in the [TESTING.md](TESTING.md) file.
     - Scroll to the bottom of the page and either click "Enable Automatic Deploys" in the Automatic deploys section or "Deploy branch" in the Manual deploy section.
 ### Forking the Project
 - Follow the steps below to fork this project,:
-    - Locate the hangman repository: https://github.com/s-batish/tango-tennis
+    - Locate the tango-tennis repository: https://github.com/s-batish/tango-tennis
     - Click the 'Fork' button at the top right of the page.
 ### Cloning the Project
 - Follow the steps below to clone this project:
