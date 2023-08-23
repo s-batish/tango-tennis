@@ -41,5 +41,3 @@ class TestRedirectViews(TestCase):
     def test_delete_lesson(self):
         response = self.client.get('/lessons/delete_lesson/1/')
         self.assertEqual(response.status_code, 302)
-
-
