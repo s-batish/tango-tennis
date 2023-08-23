@@ -669,6 +669,7 @@ All testing information can be found in the [TESTING.md](TESTING.md) file.
     - Used to connect to PostgreSQL
 ## Credits
 ### Code
+- [Django Recipe Sharing Tutorial](https://www.youtube.com/playlist?list=PLXuTq6OsqZjbCSfiLNb2f1FOs8viArjWy) for help with getting started with the project.
 - [Stack Overflow](https://stackoverflow.com/questions/11372177/how-to-use-if-else-condition-on-django-templates) for help in correctly creating if statements to templates. This was first used in the our_classes.html file to ensure only the lessons in the correct level were showing on the timetable.
 - [Stack Overflow](https://stackoverflow.com/questions/3248869/how-do-i-get-data-from-a-table) for how to get the inner text data from each cell in a table.
 - [Stack Overflow](https://stackoverflow.com/questions/14268342/make-the-first-letter-uppercase-inside-a-django-template) for how to capitalise the first letter in a template.
