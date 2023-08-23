@@ -129,9 +129,9 @@ EPIC: Registration and User Accounts
 - As a registered user, I want to log out of my account, so that I can protect my information from being accessed by others
     - Result: Signed in users can log out of their accounts
 - *As a registered user, I want to be able to edit my account details, so that I can make changes if needed - **could have***
-    - Result: This user story has been added to the list of future features
+    - Result: This user story has not been completed due to time constraints, however, it does not affect the usability of the website and has been added to the list of future features
 - *As a registered user, I want to be able to delete my account, if I no longer want to be signed up to Tango Tennis - **could have***
-    - Result: This user story has been added to the list of future features
+    - Result: This user story has not been completed due to time constraints, however, it does not affect the usability of the website and has been added to the list of future features
 
 EPIC: Viewing the features of Tango Tennis
 - As a general user, I want to see clearly laid out information about Tango Tennis, so that I can see what they have to offer
@@ -141,7 +141,7 @@ EPIC: Viewing the features of Tango Tennis
 - As a general user, I want the website to be responsive, so that I can access it on a range of devices
     - Result: The website is responsive and so can be accessed on mobile devices, tablets, laptops and desktops
 - *As a general user, I want to have access to Tango Tennis' contact information, so that I can pass on any queries I have - **could have***
-    - Result: This user story has been added to the list of future features
+    - Result: This user story has not been completed due to time constraints, however, it does not affect the usability of the website and has been added to the list of future features
 
 EPIC: Reviewing classes
 - As a registered user, I want to be able to review my classes, so that I can give feedback
@@ -251,5 +251,28 @@ EPIC: Administrative Managing of Classes
 - I had an issue where any signed in users could add lessons to the Create Lessons page if they inputted /lessons/add_lessons to the home page url.
     - Solution: I added the UserPassesTestMixin to the AddLessons view so that only staff members can access this page other users would be shown the 403 page.
 #### Unsolved Bugs
+- On the Our Classes page there is a horizontal scroll on mobile devices. I attempted to solve this by following what I had read [here](https://stackoverflow.com/questions/14360581/force-landscape-orientation-mode#:~:text=lock('landscape')%3B,and%20stay%20in%20landscape%20mode) on Stack Overflow. I added the class timetable to the Our Classes table-responsive div and then added the following code to my css file: 
+```
+@media screen and (min-width: 280px) and (max-width: 470px) and (orientation: portrait) {
+    .timetable {
+      transform: rotate(-90deg);
+      transform-origin: left top;
+      width: 100vh;
+      height: 100vw;
+      overflow-x: hidden;
+      position: absolute;
+      top: 100%;
+      left: 0;
+    }
+  }
+```
+This did rotate the Our Classes timetable however, the header and footer were not rotated alongside this. To try and fix this I created a div at the top of the our_classes.html file and gave it the class of timetable instead and wrapped everything in the file inside this div. This did produce the desired outcome as can be seen below:
+
+![Our Classes gif](docs/testing/our_classes_gif.gif)
+
+However, when I checked the HTML of this page I received the following errors:
+![Our Classes errors](docs/testing/our_classes_errors.png)
+This was because of the timetable div wrapping the entire page and as I could not find a solution to this I decided to leave the Our Classes page as it originally was with the horizontal scroll.
+
 - I originally created the home app to just render the home page index.html template, but I later decided to add the reviews functionality to my website. Because the reviews are rendered on the home page, I made the model, views and form for this within the home app as I initially thought this made sense as this was all to display on the same page. However, after a discussion with my mentor it was agreed that the reviews functionality should be contained within its own app so there should a separate home app and reviews app. Unfortunately, due to time constraints I was unable to separate the home app into two to have the reviews as its own app, but this is something I'd look to implement going forwards.
 - As I have mentioned in the future features section, currently the add lessons functionality does not correlate to the booking form, meaning that if a staff member decides that there will only be one beginners class on a Monday, this will not be reflected in the booking form. This is something that I would really like to implement, but due to my current level of knowledge I was unable to do so at the moment. Therefore, to ensure that the booking form makes sense with regards to the lesson timetable, there are currently lessons everyday at all of the time slots.
