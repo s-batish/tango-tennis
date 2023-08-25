@@ -252,7 +252,7 @@ EPIC: Administrative Managing of Classes
 - I had an issue where any signed in users could add lessons to the Create Lessons page if they inputted /lessons/add_lessons to the home page url.
     - Solution: I added the UserPassesTestMixin to the AddLessons view so that only staff members can access this page other users would be shown the 403 page.
 #### Unsolved Bugs
-- On the Our Classes page there is a horizontal scroll on mobile devices. I attempted to solve this by following what I had read [here](https://stackoverflow.com/questions/14360581/force-landscape-orientation-mode#:~:text=lock('landscape')%3B,and%20stay%20in%20landscape%20mode) on Stack Overflow. I added the class timetable to the Our Classes table-responsive div and then added the following code to my css file: 
+- On the Our Classes page there is a horizontal scroll on mobile devices. I attempted to solve this by following what I had read [here](https://stackoverflow.com/questions/14360581/force-landscape-orientation-mode#:~:text=lock('landscape')%3B,and%20stay%20in%20landscape%20mode) on Stack Overflow. This would change the orientation of the page on small devices so that the user would be forced to view the timetable in landscape mode, thus removing the need for the horizontal scroll. I added the class timetable to the Our Classes table-responsive div and then added the following code to my css file: 
 ```
 @media screen and (min-width: 280px) and (max-width: 470px) and (orientation: portrait) {
     .timetable {
